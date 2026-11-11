@@ -1,0 +1,10 @@
+{
+ "version": 1,
+ "updated": "2026-11-11",
+ "weeks": [
+  {
+   "week": 1,
+   "file": "week-1.json"
+  }
+ ]
+}
