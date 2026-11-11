@@ -16,7 +16,7 @@ Run: python3 make_lessons.py  (writes index.json, day-0.json, week-1.json)
 """
 import json
 
-V = 1  # bump when lessons change, so the app shows "New lessons"
+V = 2  # bump when lessons change, so the app shows "New lessons"
 
 def info(title, en, si="", examples=None):
     return {"type": "info", "title": title, "en": en, "si": si, "examples": examples or []}
@@ -43,8 +43,15 @@ def freechat(who, ideas, brief=""):
 def record(topic):
     return {"type": "record", "topic": topic}
 
-def session(sid, title, effort, steps):
-    return {"id": sid, "title": title, "effort": effort, "steps": steps}
+def session(sid, title, effort, steps, note=""):
+    return {"id": sid, "title": title, "effort": effort, "steps": steps, "note": note}
+
+PRIVACY_EN = ("Your voice goes to Google's speech service, which turns it into words. Your words go to Google's free Gemini AI, "
+              "so Sam and Maya can understand and help you. Google may use what you say on the free service to improve its AI, so don't say "
+              "private things like passwords or bank numbers. Your recordings, words and results stay on this phone until you remove the app.")
+PRIVACY_SI = ("ඔබේ හඬ Google හි කථන සේවාවට යයි; එය ඔබේ කතාව වචන බවට පත් කරයි. ඔබේ වචන Google හි නොමිලේ ලැබෙන Gemini AI වෙත යයි, "
+              "Sam සහ Maya ට ඔබව තේරුම් ගෙන උදව් කිරීමට. නොමිලේ සේවාවේදී ඔබ කියන දේ Google තම AI දියුණු කිරීමට භාවිතා කළ හැකියි, එබැවින් "
+              "මුරපද හෝ බැංකු අංක වැනි පුද්ගලික දේ කියන්න එපා. ඔබේ හඬ පටිගත කිරීම්, වචන සහ ප්‍රතිඵල ඔබ යෙදුම ඉවත් කරන තුරු මෙම දුරකථනයේම තිබේ.")
 
 REACT_SOUNDS = info(
     "Reaction sounds",
@@ -69,7 +76,7 @@ ASKING = info(
 day0 = {
     "day": 0, "title": "Day 0: Set-up and starting point", "companion": "both",
     "sessions": [
-        session("welcome", "Welcome", "easy", [
+        session("about", "About you", "easy", [
             info("Welcome!", "In this app you learn by speaking. Every day has 4 sessions: Learn, Meet someone and talk, "
                  "Listen and react, and Free chat. You talk to Sam and Maya, two friends from your class.\n"
                  "Tap the mic to speak English. Tap සිං when you're stuck and say it in Sinhala: the app helps you say it in English.",
@@ -82,10 +89,12 @@ day0 = {
                 "Hi Sam! I'm [his name]. I'm a student, and I really love movies.",
                 "Hi! My name is [his name]. Nice to meet you. I like movies, especially the Avengers."],
                 "Say hello, your name, and one thing about you."),
-            {"type": "agree", "en": "Your voice (and later your camera, only in video calls) goes to Google's AI to help you learn. Nothing is shared with anyone else.",
-             "si": "ඔබට ඉගෙන ගැනීමට උදව් කිරීමට ඔබේ හඬ (පසුව වීඩියෝ ඇමතුම්වලදී පමණක් කැමරාව) Google හි AI වෙත යයි. වෙන කිසිවෙකු සමඟ බෙදා ගන්නේ නැහැ."},
-        ]),
-        session("asking", "Asking for help", "easy", [
+            {"type": "record", "topic": "What movies do you love? Thor? Batman? Mad Max? Tell Maya about your favourite movies and why you like them.",
+             "saveAs": "favourites", "who": "maya"},
+        ], "Name, favourite films"),
+        session("voice", "Your voice", "easy", [
+            {"type": "miccheck"},
+            {"type": "agree", "en": PRIVACY_EN, "si": PRIVACY_SI},
             ASKING,
             drill("sam", "So yesterday I went to the cinema with my cousins and we watched the new Marvel film and it was absolutely incredible and then we went for pizza and—",
                   ["Whoa, slow down a bit!", "Sorry, could you slow down a bit?"],
@@ -96,12 +105,8 @@ day0 = {
             drill("maya", "Tell me one thing you did today. If a word is missing, tap සිං and say that part in Sinhala.",
                   ["I watched a movie today.", "I went to class and then I came home."],
                   "Practise the switch: English, then සිං for the missing word, then back to EN."),
-        ]),
-        session("favourites", "Your favourites", "easy", [
-            {"type": "record", "topic": "What movies do you love? Thor? Batman? Mad Max? Tell Maya about your favourite movies and why you like them.",
-             "saveAs": "favourites", "who": "maya"},
             {"type": "speed"},
-        ]),
+        ], "Mic check and agreement"),
         session("diagnostic", "Starting test", "medium", [
             info("Your starting point", "Just do your best. These answers are your starting point: at the end of the week you'll hear them again and see how far you've come.",
                  "ඔබට හැකි උපරිමය කරන්න. මෙම පිළිතුරු ඔබේ ආරම්භක ලක්ෂ්‍යයයි: සතිය අවසානයේ ඔබට ඒවා නැවත අසා ඔබ කොතරම් දියුණු වී ඇත්දැයි බලන්න පුළුවන්."),
@@ -113,7 +118,7 @@ day0 = {
             {"type": "record", "topic": "Tell me about yourself: who you are, what you do, what you like.", "saveAs": "baseline-talk", "who": "maya"},
             freechat("both", ["Which is better: Marvel or Batman?", "A movie you watched recently"],
                      "First taste: an easy chat. Sam and Maya disagree about a film and ask what he thinks. No score."),
-        ]),
+        ], "15 minutes · your starting point"),
     ],
 }
 
@@ -389,6 +394,21 @@ d7 = day(7, "Review and weekly test", "both", [], "review", [
         record("Tell me about yourself: who you are, what you do, what you like."),
     ]),
 ], "Then vs now: tell me about yourself.")
+
+CHAT_EXTRA = {
+    1: ("Sam, a new classmate", "New classmate"),
+    2: ("Maya, your friend from class", "Catching up"),
+    3: ("A young woman you don't know, in the cinema queue", "Cinema queue"),
+    4: ("Maya, your friend from class", "Maya's news"),
+    5: ("Sam, your friend from class", "Hannibal?"),
+    6: ("Your uncle, at your cousin's wedding", "A cousin's wedding"),
+    7: ("A young woman at the cinema", "Your seat or mine?"),
+}
+for d in [d1, d2, d3, d4, d5, d6, d7]:
+    for se in d["sessions"]:
+        for st in se["steps"]:
+            if st["type"] == "chat":
+                st["whoLine"], st["title"] = CHAT_EXTRA[d["day"]]
 
 week1 = {"week": 1, "title": "Week 1: Respond, Start, Keep It Going", "version": V,
          "note": "Each week is written at the end of the previous one, from his results.",

@@ -1,7 +1,7 @@
 {
  "week": 1,
  "title": "Week 1: Respond, Start, Keep It Going",
- "version": 1,
+ "version": 2,
  "note": "Each week is written at the end of the previous one, from his results.",
  "days": [
   {
@@ -10,8 +10,8 @@
    "companion": "both",
    "sessions": [
     {
-     "id": "welcome",
-     "title": "Welcome",
+     "id": "about",
+     "title": "About you",
      "effort": "easy",
      "steps": [
       {
@@ -49,17 +49,27 @@
        "si": ""
       },
       {
-       "type": "agree",
-       "en": "Your voice (and later your camera, only in video calls) goes to Google's AI to help you learn. Nothing is shared with anyone else.",
-       "si": "ඔබට ඉගෙන ගැනීමට උදව් කිරීමට ඔබේ හඬ (පසුව වීඩියෝ ඇමතුම්වලදී පමණක් කැමරාව) Google හි AI වෙත යයි. වෙන කිසිවෙකු සමඟ බෙදා ගන්නේ නැහැ."
+       "type": "record",
+       "topic": "What movies do you love? Thor? Batman? Mad Max? Tell Maya about your favourite movies and why you like them.",
+       "saveAs": "favourites",
+       "who": "maya"
       }
-     ]
+     ],
+     "note": "Name, favourite films"
     },
     {
-     "id": "asking",
-     "title": "Asking for help",
+     "id": "voice",
+     "title": "Your voice",
      "effort": "easy",
      "steps": [
+      {
+       "type": "miccheck"
+      },
+      {
+       "type": "agree",
+       "en": "Your voice goes to Google's speech service, which turns it into words. Your words go to Google's free Gemini AI, so Sam and Maya can understand and help you. Google may use what you say on the free service to improve its AI, so don't say private things like passwords or bank numbers. Your recordings, words and results stay on this phone until you remove the app.",
+       "si": "ඔබේ හඬ Google හි කථන සේවාවට යයි; එය ඔබේ කතාව වචන බවට පත් කරයි. ඔබේ වචන Google හි නොමිලේ ලැබෙන Gemini AI වෙත යයි, Sam සහ Maya ට ඔබව තේරුම් ගෙන උදව් කිරීමට. නොමිලේ සේවාවේදී ඔබ කියන දේ Google තම AI දියුණු කිරීමට භාවිතා කළ හැකියි, එබැවින් මුරපද හෝ බැංකු අංක වැනි පුද්ගලික දේ කියන්න එපා. ඔබේ හඬ පටිගත කිරීම්, වචන සහ ප්‍රතිඵල ඔබ යෙදුම ඉවත් කරන තුරු මෙම දුරකථනයේම තිබේ."
+      },
       {
        "type": "info",
        "title": "When you don't catch something, ask!",
@@ -99,24 +109,12 @@
        ],
        "point": "Practise the switch: English, then සිං for the missing word, then back to EN.",
        "si": ""
-      }
-     ]
-    },
-    {
-     "id": "favourites",
-     "title": "Your favourites",
-     "effort": "easy",
-     "steps": [
-      {
-       "type": "record",
-       "topic": "What movies do you love? Thor? Batman? Mad Max? Tell Maya about your favourite movies and why you like them.",
-       "saveAs": "favourites",
-       "who": "maya"
       },
       {
        "type": "speed"
       }
-     ]
+     ],
+     "note": "Mic check and agreement"
     },
     {
      "id": "diagnostic",
@@ -185,7 +183,8 @@
        ],
        "brief": "First taste: an easy chat. Sam and Maya disagree about a film and ask what he thinks. No score."
       }
-     ]
+     ],
+     "note": "15 minutes · your starting point"
     }
    ]
   },
@@ -278,7 +277,8 @@
        "point": "Accept the compliment. Don't say \"No, it's bad.\"",
        "si": ""
       }
-     ]
+     ],
+     "note": ""
     },
     {
      "id": "talk",
@@ -296,9 +296,12 @@
        "minTurns": 8,
        "brief": "You meet him on his first day in a new class at the canteen. Give him 3 compliments (haircut, shirt, his English) one at a time, then talk about movies. Once, speak a little fast on purpose so he practises asking you to slow down.",
        "opener": "Hey! You're new, right? Nice haircut, by the way!",
-       "scored": true
+       "scored": true,
+       "whoLine": "Sam, a new classmate",
+       "title": "New classmate"
       }
-     ]
+     ],
+     "note": ""
     },
     {
      "id": "listen",
@@ -345,7 +348,8 @@
         }
        ]
       }
-     ]
+     ],
+     "note": ""
     },
     {
      "id": "free",
@@ -366,7 +370,8 @@
        "type": "record",
        "topic": "Tell Maya about yourself and the movies you love."
       }
-     ]
+     ],
+     "note": ""
     }
    ]
   },
@@ -438,7 +443,8 @@
        "point": "Laugh, play along, move on with anyway.",
        "si": ""
       }
-     ]
+     ],
+     "note": ""
     },
     {
      "id": "talk",
@@ -456,9 +462,12 @@
        "minTurns": 10,
        "brief": "You call him on video after a long time to catch up. Tease him twice, e.g. \"Still watching Marvel? Batman is better!\".",
        "opener": "Hey! Long time no see! Where have you been?",
-       "scored": true
+       "scored": true,
+       "whoLine": "Maya, your friend from class",
+       "title": "Catching up"
       }
-     ]
+     ],
+     "note": ""
     },
     {
      "id": "listen",
@@ -498,7 +507,8 @@
         }
        ]
       }
-     ]
+     ],
+     "note": ""
     },
     {
      "id": "free",
@@ -519,7 +529,8 @@
        "type": "record",
        "topic": "How have you been this week? What did you watch?"
       }
-     ]
+     ],
+     "note": ""
     }
    ]
   },
@@ -598,7 +609,8 @@
        "point": "A cold answer! Don't give up: ask a second question.",
        "si": ""
       }
-     ]
+     ],
+     "note": ""
     },
     {
      "id": "talk",
@@ -616,9 +628,12 @@
        "minTurns": 8,
        "brief": "Play a stranger (not Maya) in a cinema queue. HE must speak first: wait for him. Be a little cold at first (short answers), then warm up if he asks good questions. Once, speak a little fast.",
        "opener": "",
-       "scored": true
+       "scored": true,
+       "whoLine": "A young woman you don't know, in the cinema queue",
+       "title": "Cinema queue"
       }
-     ]
+     ],
+     "note": ""
     },
     {
      "id": "listen",
@@ -658,7 +673,8 @@
         }
        ]
       }
-     ]
+     ],
+     "note": ""
     },
     {
      "id": "free",
@@ -679,7 +695,8 @@
        "type": "record",
        "topic": "Start a conversation with someone in a cinema queue."
       }
-     ]
+     ],
+     "note": ""
     }
    ]
   },
@@ -757,7 +774,8 @@
        "point": "Echo question.",
        "si": ""
       }
-     ]
+     ],
+     "note": ""
     },
     {
      "id": "talk",
@@ -775,9 +793,12 @@
        "minTurns": 12,
        "brief": "You phone him with news, one piece at a time: good news, then bad news, then something funny about a film. Pause after each piece so he reacts and asks.",
        "opener": "Hey! It's Maya. You won't believe what happened today!",
-       "scored": true
+       "scored": true,
+       "whoLine": "Maya, your friend from class",
+       "title": "Maya's news"
       }
-     ]
+     ],
+     "note": ""
     },
     {
      "id": "listen",
@@ -821,7 +842,8 @@
         }
        ]
       }
-     ]
+     ],
+     "note": ""
     },
     {
      "id": "free",
@@ -842,7 +864,8 @@
        "type": "record",
        "topic": "React to news: tell Maya about something that happened recently, and ask her about her week."
       }
-     ]
+     ],
+     "note": ""
     }
    ]
   },
@@ -903,7 +926,8 @@
        "point": "Retell the film in about a minute.",
        "si": ""
       }
-     ]
+     ],
+     "note": ""
     },
     {
      "id": "talk",
@@ -921,9 +945,12 @@
        "minTurns": 10,
        "brief": "You haven't seen Hannibal and think it's too scary. Ask him what it's about, react with Oh! and And then?, ask follow-ups, and let him convince you.",
        "opener": "Hey! So everyone keeps talking about Hannibal. What's it about? Isn't it too scary?",
-       "scored": true
+       "scored": true,
+       "whoLine": "Sam, your friend from class",
+       "title": "Hannibal?"
       }
-     ]
+     ],
+     "note": ""
     },
     {
      "id": "listen",
@@ -963,7 +990,8 @@
         }
        ]
       }
-     ]
+     ],
+     "note": ""
     },
     {
      "id": "free",
@@ -984,7 +1012,8 @@
        "type": "record",
        "topic": "Retell your favourite film in one minute."
       }
-     ]
+     ],
+     "note": ""
     }
    ]
   },
@@ -1043,7 +1072,8 @@
        "point": "Close politely.",
        "si": ""
       }
-     ]
+     ],
+     "note": ""
     },
     {
      "id": "talk",
@@ -1061,9 +1091,12 @@
        "minTurns": 12,
        "brief": "Play his uncle (not Maya) at a cousin's wedding: friendly, a bit of a tease. Ask about his studies and films, and at some point ask: \"So, when are YOU getting married?\"",
        "opener": "Ah, there you are! Look at you, all dressed up! How have you been?",
-       "scored": true
+       "scored": true,
+       "whoLine": "Your uncle, at your cousin's wedding",
+       "title": "A cousin's wedding"
       }
-     ]
+     ],
+     "note": ""
     },
     {
      "id": "listen",
@@ -1103,7 +1136,8 @@
         }
        ]
       }
-     ]
+     ],
+     "note": ""
     },
     {
      "id": "free",
@@ -1124,7 +1158,8 @@
        "type": "record",
        "topic": "Talk about your week: what you learned, what was hard, what was fun."
       }
-     ]
+     ],
+     "note": ""
     }
    ]
   },
@@ -1151,7 +1186,8 @@
       {
        "type": "sayagain"
       }
-     ]
+     ],
+     "note": ""
     },
     {
      "id": "test",
@@ -1238,9 +1274,12 @@
        "minTurns": 12,
        "brief": "Play a stranger at the cinema who thinks he is in her seat (seat H7). Be polite but firm; it turns out his ticket says H8. Then chat about the film.",
        "opener": "Excuse me, sorry, I think you're in my seat?",
-       "scored": true
+       "scored": true,
+       "whoLine": "A young woman at the cinema",
+       "title": "Your seat or mine?"
       }
-     ]
+     ],
+     "note": ""
     },
     {
      "id": "free",
@@ -1261,7 +1300,8 @@
        "type": "record",
        "topic": "Tell me about yourself: who you are, what you do, what you like."
       }
-     ]
+     ],
+     "note": ""
     }
    ]
   }
