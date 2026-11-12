@@ -43,7 +43,7 @@
        "type": "model",
        "who": "sam",
        "lines": [
-        "Hey! I'm Sam. I'm in your English class. I live in Kandy with my parents and two little brothers, and I love cricket. Oh, and Marvel films!"
+        "Hey! I'm Sam. I'm in your English class. I live near Kandy with my parents, my two little brothers and our dog Bruno. I love cricket, and I'm a terrible cook!"
        ],
        "note": ""
       },
@@ -51,7 +51,7 @@
        "type": "model",
        "who": "maya",
        "lines": [
-        "Hi, I'm Maya. I'm in your class too. I work part-time in a café in the evenings, and on weekends I like to travel. Nice to meet you!"
+        "Hi, I'm Maya. I'm in your class too. I'm from Jaffna, but I live in Colombo now. I work in a café in the evenings, and I love travelling. Nice to meet you!"
        ],
        "note": ""
       },
@@ -1161,7 +1161,7 @@
        "type": "listen",
        "who": "sam",
        "title": "Sam's three pieces of news",
-       "script": "Okay, three things happened this week. First, the good news: I finally passed my driving test! Third time, but who's counting? Second, the bad news: on the way home I dropped my phone in a puddle, and now the screen is completely black. My mum says it's karma. And third, the strange news: my neighbour's dog followed me to college on Wednesday, and he sat outside the classroom all morning. The teacher thought it was my dog! So, yeah, a busy week.",
+       "script": "Okay, three things happened this week. First, the good news: my mum had a baby last night! I've got a new little brother. His name is Thenuka, and he's so tiny! Second, the bad news: on the way to the hospital I dropped my phone in a puddle, and now the screen is completely black. My mum says it's karma. And third, the strange news: my neighbour's dog followed me to college on Wednesday, and he sat outside the classroom all morning. The teacher thought it was my dog! So, yeah, a busy week.",
        "questions": [
         "What was Sam's good news?",
         "What happened to his phone?",

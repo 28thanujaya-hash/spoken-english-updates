@@ -14,7 +14,7 @@ Run: python3 make_lessons.py  (writes index.json and week-1.json)
 """
 import json
 
-V = 4
+V = 5
 
 def info(title, en, si="", examples=None):
     return {"type": "info", "title": title, "en": en, "si": si, "examples": examples or []}
@@ -131,8 +131,8 @@ day0 = day(0, "Getting started",
              "Tap the mic to speak English. When you're stuck, tap සිං and say it in Sinhala: the app helps you say it in English.",
              "මෙම යෙදුමේ ඔබ ඉගෙන ගන්නේ කතා කරමින්. සෑම දිනකම එකම කොටස් තියෙනවා: shadowing, වාක්‍ය ඛණ්ඩ, 3-2-1 කතාව, සංවාදයක්, ඇහුම්කන් දීම සහ නැවත බැලීම.\n"
              "ඉංග්‍රීසියෙන් කතා කරන්න mic එක ඔබන්න. හිරවුණොත් සිං ඔබා සිංහලෙන් කියන්න: යෙදුම එය ඉංග්‍රීසියෙන් කියන්න උදව් කරයි."),
-        model("sam", ["Hey! I'm Sam. I'm in your English class. I live in Kandy with my parents and two little brothers, and I love cricket. Oh, and Marvel films!"]),
-        model("maya", ["Hi, I'm Maya. I'm in your class too. I work part-time in a café in the evenings, and on weekends I like to travel. Nice to meet you!"]),
+        model("sam", ["Hey! I'm Sam. I'm in your English class. I live near Kandy with my parents, my two little brothers and our dog Bruno. I love cricket, and I'm a terrible cook!"]),
+        model("maya", ["Hi, I'm Maya. I'm in your class too. I'm from Jaffna, but I live in Colombo now. I work in a café in the evenings, and I love travelling. Nice to meet you!"]),
         drill("sam", "So, what's your name? Where are you from?", ["Hi Sam! I'm [his name]. I'm from Kandy.", "My name is [his name]. I'm from a small town near Galle."],
               "Your name and where you're from."),
         drill("maya", "What do you do? Are you studying, or working?", ["I'm studying IT at a college.", "At the moment I'm working in a shop."],
@@ -263,8 +263,8 @@ d3 = day(3, "Reacting and buying time",
         "Let him react and ask before you give the next one. Ask him one hard question so he must buy time.",
         "Hey! It's Maya. Have you got a minute? I've got so much news!", "Maya's news", "Maya, on the phone"), "Phone call"),
     listen_part("Three pieces of news", listen("sam", "Sam's three pieces of news",
-        "Okay, three things happened this week. First, the good news: I finally passed my driving test! Third time, but who's counting? "
-        "Second, the bad news: on the way home I dropped my phone in a puddle, and now the screen is completely black. My mum says it's karma. "
+        "Okay, three things happened this week. First, the good news: my mum had a baby last night! I've got a new little brother. His name is Thenuka, and he's so tiny! "
+        "Second, the bad news: on the way to the hospital I dropped my phone in a puddle, and now the screen is completely black. My mum says it's karma. "
         "And third, the strange news: my neighbour's dog followed me to college on Wednesday, and he sat outside the classroom all morning. "
         "The teacher thought it was my dog! So, yeah, a busy week.",
         ["What was Sam's good news?", "What happened to his phone?", "What did the dog do?"], "tell me Sam's three pieces of news."),
