@@ -115,8 +115,8 @@
       },
       {
        "name": "Agreement",
-       "desc": "how your voice is used",
-       "mode": "read · EN | සිං"
+       "desc": "how your practice is used",
+       "mode": "read"
       },
       {
        "name": "Listening speed",
@@ -135,8 +135,8 @@
       },
       {
        "type": "agree",
-       "en": "Your voice goes to Google's speech service, which turns it into words. Your words go to Google's free Gemini AI, so Sam and Maya can understand and help you. Google may use what you say on the free service to improve its AI, so don't say private things like passwords or bank numbers. Your recordings, words and results stay on this phone until you remove the app.",
-       "si": "ඔබේ හඬ Google හි කථන සේවාවට යයි; එය ඔබේ කතාව වචන බවට පත් කරයි. ඔබේ වචන Google හි නොමිලේ ලැබෙන Gemini AI වෙත යයි, Sam සහ Maya ට ඔබව තේරුම් ගෙන උදව් කිරීමට. නොමිලේ සේවාවේදී ඔබ කියන දේ Google තම AI දියුණු කිරීමට භාවිතා කළ හැකියි, එබැවින් මුරපද හෝ බැංකු අංක වැනි පුද්ගලික දේ කියන්න එපා. ඔබේ හඬ පටිගත කිරීම්, වචන සහ ප්‍රතිඵල ඔබ යෙදුම ඉවත් කරන තුරු මෙම දුරකථනයේම තිබේ."
+       "en": "Your mentor follows your practice to help you improve. He uses these tools:\n• Google speech recognition turns your voice into words.\n• Google's voices read Sam's and Maya's words aloud.\n• Gemini (Google's AI) plays Sam and Maya, checks your answers and plans your next day. Google may use what is sent to Gemini to improve its services.\n• Claude (an AI assistant) helps your mentor read your practice, find problems and make the app better.\nThe text of your talks goes to your mentor and these tools. Your voice recordings stay on this phone.",
+       "si": ""
       },
       {
        "type": "info",

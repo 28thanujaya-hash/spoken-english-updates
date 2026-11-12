@@ -14,7 +14,7 @@ Run: python3 make_lessons.py  (writes index.json and week-1.json)
 """
 import json
 
-V = 3
+V = 4
 
 def info(title, en, si="", examples=None):
     return {"type": "info", "title": title, "en": en, "si": si, "examples": examples or []}
@@ -48,12 +48,13 @@ def part(pid, title, why, what, steps, short=False, mode=""):
     return {"id": pid, "title": title, "why": why, "what": [{"name": a, "desc": b, "mode": c} for a, b, c in what],
             "steps": steps, "short": short, "mode": mode}
 
-PRIVACY_EN = ("Your voice goes to Google's speech service, which turns it into words. Your words go to Google's free Gemini AI, "
-              "so Sam and Maya can understand and help you. Google may use what you say on the free service to improve its AI, so don't say "
-              "private things like passwords or bank numbers. Your recordings, words and results stay on this phone until you remove the app.")
-PRIVACY_SI = ("ඔබේ හඬ Google හි කථන සේවාවට යයි; එය ඔබේ කතාව වචන බවට පත් කරයි. ඔබේ වචන Google හි නොමිලේ ලැබෙන Gemini AI වෙත යයි, "
-              "Sam සහ Maya ට ඔබව තේරුම් ගෙන උදව් කිරීමට. නොමිලේ සේවාවේදී ඔබ කියන දේ Google තම AI දියුණු කිරීමට භාවිතා කළ හැකියි, එබැවින් "
-              "මුරපද හෝ බැංකු අංක වැනි පුද්ගලික දේ කියන්න එපා. ඔබේ හඬ පටිගත කිරීම්, වචන සහ ප්‍රතිඵල ඔබ යෙදුම ඉවත් කරන තුරු මෙම දුරකථනයේම තිබේ.")
+PRIVACY_EN = ("Your mentor follows your practice to help you improve. He uses these tools:\n"
+    "• Google speech recognition turns your voice into words.\n"
+    "• Google's voices read Sam's and Maya's words aloud.\n"
+    "• Gemini (Google's AI) plays Sam and Maya, checks your answers and plans your next day. Google may use what is sent to Gemini to improve its services.\n"
+    "• Claude (an AI assistant) helps your mentor read your practice, find problems and make the app better.\n"
+    "The text of your talks goes to your mentor and these tools. Your voice recordings stay on this phone.")
+PRIVACY_SI = ""
 
 REACT_SOUNDS = info(
     "Reaction sounds",
@@ -142,7 +143,7 @@ day0 = day(0, "Getting started",
               "One or two things you like."),
     ]),
     part("voice", "Your voice", "A quick check that the app hears you well, how fast you understand, and a first try at shadowing.",
-         [("Mic check", "say one sentence; see what the app heard", "you talk"), ("Agreement", "how your voice is used", "read · EN | සිං"),
+         [("Mic check", "say one sentence; see what the app heard", "you talk"), ("Agreement", "how your practice is used", "read"),
           ("Listening speed", "five sentences, slow to fast", "you talk"), ("First shadowing", "echo three short lines", "you talk")], [
         {"type": "miccheck"},
         {"type": "agree", "en": PRIVACY_EN, "si": PRIVACY_SI},
