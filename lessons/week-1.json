@@ -1,31 +1,49 @@
 {
  "week": 1,
- "title": "Week 1: Respond, Start, Keep It Going",
- "version": 2,
- "note": "Each week is written at the end of the previous one, from his results.",
+ "title": "Unlock: talk about yourself and react",
  "days": [
   {
    "day": 0,
-   "title": "Day 0: Set-up and starting point",
+   "title": "Getting started",
+   "overview": "Meet Sam and Maya, set up your voice, and record where you start. It takes about an hour, and nothing is scored.",
+   "byTheEnd": "By the end, Sam and Maya know you, and you have your Day 0 voice to compare with later.",
+   "phrases": [
+    "My name is…",
+    "I'm from…",
+    "Again, please.",
+    "Sorry, could you slow down?"
+   ],
    "companion": "both",
    "sessions": [
     {
      "id": "about",
      "title": "About you",
-     "effort": "easy",
+     "why": "Sam and Maya are your classmates. What you tell them today, they remember.",
+     "what": [
+      {
+       "name": "Meet Sam and Maya",
+       "desc": "two classmates say hello",
+       "mode": "voice only"
+      },
+      {
+       "name": "About you",
+       "desc": "your name, studies, family, town, what you like",
+       "mode": "you talk"
+      }
+     ],
      "steps": [
       {
        "type": "info",
        "title": "Welcome!",
-       "en": "In this app you learn by speaking. Every day has 4 sessions: Learn, Meet someone and talk, Listen and react, and Free chat. You talk to Sam and Maya, two friends from your class.\nTap the mic to speak English. Tap සිං when you're stuck and say it in Sinhala: the app helps you say it in English.",
-       "si": "මෙම යෙදුමේ ඔබ කතා කරමින් ඉගෙන ගන්නවා. සෑම දිනකම සැසි 4ක් තියෙනවා: ඉගෙනීම, කෙනෙක් හමුවී කතා කිරීම, අහලා ප්‍රතිචාර දැක්වීම, සහ නිදහස් කතාව. ඔබ කතා කරන්නේ ඔබේ පන්තියේ යාළුවන් දෙදෙනෙක් වන Sam සහ Maya සමඟ.\nඉංග්‍රීසියෙන් කතා කිරීමට mic එක ඔබන්න. හිරවුණොත් සිං ඔබා සිංහලෙන් කියන්න: යෙදුම එය ඉංග්‍රීසියෙන් කියන්න උදව් කරයි.",
+       "en": "In this app you learn by speaking. Every day has the same parts: shadowing, phrases, a 3-2-1 talk, a conversation, listening and a review.\nTap the mic to speak English. When you're stuck, tap සිං and say it in Sinhala: the app helps you say it in English.",
+       "si": "මෙම යෙදුමේ ඔබ ඉගෙන ගන්නේ කතා කරමින්. සෑම දිනකම එකම කොටස් තියෙනවා: shadowing, වාක්‍ය ඛණ්ඩ, 3-2-1 කතාව, සංවාදයක්, ඇහුම්කන් දීම සහ නැවත බැලීම.\nඉංග්‍රීසියෙන් කතා කරන්න mic එක ඔබන්න. හිරවුණොත් සිං ඔබා සිංහලෙන් කියන්න: යෙදුම එය ඉංග්‍රීසියෙන් කියන්න උදව් කරයි.",
        "examples": []
       },
       {
        "type": "model",
        "who": "sam",
        "lines": [
-        "Hey! I'm Sam. I'm in your English class. I'm a huge Marvel fan. Iron Man, Thor, all of them!"
+        "Hey! I'm Sam. I'm in your English class. I live in Kandy with my parents and two little brothers, and I love cricket. Oh, and Marvel films!"
        ],
        "note": ""
       },
@@ -33,34 +51,84 @@
        "type": "model",
        "who": "maya",
        "lines": [
-        "Hi, I'm Maya. I'm in your class too. I love Hannibal, and Batman is way better than Marvel. Sorry, Sam!"
+        "Hi, I'm Maya. I'm in your class too. I work part-time in a café in the evenings, and on weekends I like to travel. Nice to meet you!"
        ],
        "note": ""
       },
       {
        "type": "drill",
        "who": "sam",
-       "prompt": "So, what's your name? Tell me a little about yourself!",
+       "prompt": "So, what's your name? Where are you from?",
        "models": [
-        "Hi Sam! I'm [his name]. I'm a student, and I really love movies.",
-        "Hi! My name is [his name]. Nice to meet you. I like movies, especially the Avengers."
+        "Hi Sam! I'm [his name]. I'm from Kandy.",
+        "My name is [his name]. I'm from a small town near Galle."
        ],
-       "point": "Say hello, your name, and one thing about you.",
+       "point": "Your name and where you're from.",
        "si": ""
       },
       {
-       "type": "record",
-       "topic": "What movies do you love? Thor? Batman? Mad Max? Tell Maya about your favourite movies and why you like them.",
-       "saveAs": "favourites",
-       "who": "maya"
+       "type": "drill",
+       "who": "maya",
+       "prompt": "What do you do? Are you studying, or working?",
+       "models": [
+        "I'm studying IT at a college.",
+        "At the moment I'm working in a shop."
+       ],
+       "point": "What you do now.",
+       "si": ""
+      },
+      {
+       "type": "drill",
+       "who": "sam",
+       "prompt": "Who do you live with?",
+       "models": [
+        "I live with my parents and my sister.",
+        "I live with my family: my mother, my father and my younger brother."
+       ],
+       "point": "Your family.",
+       "si": ""
+      },
+      {
+       "type": "drill",
+       "who": "maya",
+       "prompt": "What do you like doing in your free time?",
+       "models": [
+        "I like watching films and playing cricket.",
+        "I love films, especially action films."
+       ],
+       "point": "One or two things you like.",
+       "si": ""
       }
      ],
-     "note": "Name, favourite films"
+     "short": false,
+     "mode": ""
     },
     {
      "id": "voice",
      "title": "Your voice",
-     "effort": "easy",
+     "why": "A quick check that the app hears you well, how fast you understand, and a first try at shadowing.",
+     "what": [
+      {
+       "name": "Mic check",
+       "desc": "say one sentence; see what the app heard",
+       "mode": "you talk"
+      },
+      {
+       "name": "Agreement",
+       "desc": "how your voice is used",
+       "mode": "read · EN | සිං"
+      },
+      {
+       "name": "Listening speed",
+       "desc": "five sentences, slow to fast",
+       "mode": "you talk"
+      },
+      {
+       "name": "First shadowing",
+       "desc": "echo three short lines",
+       "mode": "you talk"
+      }
+     ],
      "steps": [
       {
        "type": "miccheck"
@@ -78,1103 +146,2091 @@
        "examples": []
       },
       {
-       "type": "drill",
-       "who": "sam",
-       "prompt": "So yesterday I went to the cinema with my cousins and we watched the new Marvel film and it was absolutely incredible and then we went for pizza and—",
-       "models": [
-        "Whoa, slow down a bit!",
-        "Sorry, could you slow down a bit?"
-       ],
-       "point": "Sam is talking too fast on purpose. Ask him to slow down.",
-       "si": ""
-      },
-      {
-       "type": "drill",
-       "who": "maya",
-       "prompt": "Lecter is such an enigmatic character, don't you think?",
-       "models": [
-        "Sorry, what does 'enigmatic' mean?",
-        "What's 'enigmatic'?"
-       ],
-       "point": "Maya used a word you may not know. Ask what it means.",
-       "si": ""
-      },
-      {
-       "type": "drill",
-       "who": "maya",
-       "prompt": "Tell me one thing you did today. If a word is missing, tap සිං and say that part in Sinhala.",
-       "models": [
-        "I watched a movie today.",
-        "I went to class and then I came home."
-       ],
-       "point": "Practise the switch: English, then සිං for the missing word, then back to EN.",
-       "si": ""
-      },
-      {
        "type": "speed"
+      },
+      {
+       "type": "shadow",
+       "who": "maya",
+       "lines": [
+        "Nice to meet you.",
+        "I'm from Kandy.",
+        "How about you?"
+       ]
       }
      ],
-     "note": "Mic check and agreement"
+     "short": false,
+     "mode": ""
     },
     {
-     "id": "diagnostic",
-     "title": "Starting test",
-     "effort": "medium",
+     "id": "start",
+     "title": "Your starting point",
+     "why": "Just do your best. In a week you'll hear this again and see how far you've come.",
+     "what": [
+      {
+       "name": "About yourself",
+       "desc": "talk for 2 minutes, recorded",
+       "mode": "recorded"
+      },
+      {
+       "name": "Five quick moments",
+       "desc": "answer however you can",
+       "mode": "you talk"
+      },
+      {
+       "name": "First 3-2-1 talk",
+       "desc": "one topic, 3 then 2 then 1 minute",
+       "mode": "recorded"
+      },
+      {
+       "name": "Easy chat",
+       "desc": "5 minutes with Maya, no score",
+       "mode": "you talk"
+      }
+     ],
      "steps": [
       {
-       "type": "info",
-       "title": "Your starting point",
-       "en": "Just do your best. These answers are your starting point: at the end of the week you'll hear them again and see how far you've come.",
-       "si": "ඔබට හැකි උපරිමය කරන්න. මෙම පිළිතුරු ඔබේ ආරම්භක ලක්ෂ්‍යයයි: සතිය අවසානයේ ඔබට ඒවා නැවත අසා ඔබ කොතරම් දියුණු වී ඇත්දැයි බලන්න පුළුවන්.",
-       "examples": []
-      },
-      {
-       "type": "drill",
-       "who": "sam",
-       "prompt": "Nice haircut!",
-       "models": [],
-       "point": "Answer however you can.",
-       "si": ""
-      },
-      {
-       "type": "drill",
-       "who": "maya",
-       "prompt": "You look tired today.",
-       "models": [],
-       "point": "Answer however you can.",
-       "si": ""
-      },
-      {
-       "type": "drill",
-       "who": "sam",
-       "prompt": "Hey, are you a movie fan?",
-       "models": [],
-       "point": "Answer however you can.",
-       "si": ""
-      },
-      {
-       "type": "drill",
-       "who": "maya",
-       "prompt": "Your English is good!",
-       "models": [],
-       "point": "Answer however you can.",
-       "si": ""
-      },
-      {
-       "type": "drill",
-       "who": "sam",
-       "prompt": "Long time no see!",
-       "models": [],
-       "point": "Answer however you can.",
-       "si": ""
-      },
-      {
        "type": "record",
-       "topic": "Tell me about yourself: who you are, what you do, what you like.",
+       "topic": "Tell me about yourself: who you are, what you do, your family, what you like.",
        "saveAs": "baseline-talk",
        "who": "maya"
       },
       {
+       "type": "drill",
+       "who": "sam",
+       "prompt": "Nice shirt!",
+       "models": [],
+       "point": "Answer however you can.",
+       "si": ""
+      },
+      {
+       "type": "drill",
+       "who": "maya",
+       "prompt": "Do you know where the library is?",
+       "models": [],
+       "point": "Answer however you can.",
+       "si": ""
+      },
+      {
+       "type": "drill",
+       "who": "sam",
+       "prompt": "Oh no, I failed my driving test today.",
+       "models": [],
+       "point": "Answer however you can.",
+       "si": ""
+      },
+      {
+       "type": "drill",
+       "who": "maya",
+       "prompt": "(At a bus stop. Someone is waiting next to you. Speak first.)",
+       "models": [],
+       "point": "Answer however you can.",
+       "si": ""
+      },
+      {
+       "type": "drill",
+       "who": "sam",
+       "prompt": "So yesterday after class I went to my cousin's place and we had rice and curry and then we watched the match and—",
+       "models": [],
+       "point": "Answer however you can.",
+       "si": ""
+      },
+      {
+       "type": "talk321",
+       "topic": "My day today",
+       "points": [
+        "when I got up",
+        "what I did",
+        "who I met",
+        "what I ate",
+        "how I feel"
+       ]
+      },
+      {
        "type": "freechat",
-       "who": "both",
+       "who": "maya",
        "ideas": [
-        "Which is better: Marvel or Batman?",
-        "A movie you watched recently"
+        "Your town",
+        "Your family",
+        "A film you like"
        ],
-       "brief": "First taste: an easy chat. Sam and Maya disagree about a film and ask what he thinks. No score."
+       "brief": "First taste: an easy chat. Ask him about his town and family. No score."
       }
      ],
-     "note": "15 minutes · your starting point"
+     "short": false,
+     "mode": ""
     }
    ]
   },
   {
    "day": 1,
-   "title": "Respond to compliments and a first meeting",
-   "companion": "sam",
-   "connectors": [
-    "actually",
-    "because",
-    "by the way"
+   "title": "Me: introduce yourself",
+   "overview": "Learn a few ready phrases to say who you are, practise them with Sam and Maya, meet a new classmate at the canteen, and hear Maya's story.",
+   "byTheEnd": "By the end you can talk about yourself and ask back, without stopping.",
+   "phrases": [
+    "I'm from…",
+    "I live in…",
+    "At the moment I'm…",
+    "I'm really into…",
+    "To be honest…",
+    "How about you?"
    ],
-   "sound": "v / w: very, movie, Avengers vs well, wow, watch, what",
-   "review": "Tell Maya about yourself and the movies you love.",
+   "companion": "sam",
    "sessions": [
     {
-     "id": "learn",
-     "title": "Learn",
-     "effort": "hard",
+     "id": "shadow",
+     "title": "Shadowing",
+     "why": "Repeating right after Sam or Maya, at their speed, makes English rhythm your own. You stop translating and start copying how real people sound.",
+     "what": [
+      {
+       "name": "Listen",
+       "desc": "Sam says short lines",
+       "mode": "voice only"
+      },
+      {
+       "name": "Echo",
+       "desc": "repeat right after each line, at the same speed",
+       "mode": "you talk"
+      }
+     ],
+     "steps": [
+      {
+       "type": "shadow",
+       "who": "sam",
+       "lines": [
+        "Hi, I'm Sam. Nice to meet you.",
+        "I'm from Kandy, but I live in Colombo now.",
+        "At the moment I'm studying English.",
+        "To be honest, I'm a bit nervous.",
+        "I'm really into cricket.",
+        "How about you?"
+       ]
+      }
+     ],
+     "short": true,
+     "mode": ""
+    },
+    {
+     "id": "phrases",
+     "title": "Learn today's phrases",
+     "why": "Ready-made phrases come out fast. Learn them as whole blocks, and you don't have to build sentences word by word.",
+     "what": [
+      {
+       "name": "Listen",
+       "desc": "Sam uses today's phrases",
+       "mode": "voice only"
+      },
+      {
+       "name": "Understand",
+       "desc": "when to use each",
+       "mode": "read · EN | සිං"
+      },
+      {
+       "name": "Practise",
+       "desc": "answer Sam and Maya with them",
+       "mode": "you talk"
+      }
+     ],
      "steps": [
       {
        "type": "info",
-       "title": "Today: respond, don't just answer",
-       "en": "When someone says something nice or surprising, don't stop at \"Thanks.\"\nPattern: React → add a detail with a connector → bounce it back.\nNew connectors: actually · because · by the way.\nLong reply for friends; short reply (\"Oh, thanks!\" + a smile) when the moment is short.",
-       "si": "කවුරුහරි හොඳ හෝ පුදුම දෙයක් කිව්වම \"Thanks.\" කියලා නවතින්න එපා.\nරටාව: ප්‍රතිචාරය → connector එකක් සමඟ විස්තරයක් → ආපසු ප්‍රශ්නයක්.\nනව connectors: actually (ඇත්තටම) · because (නිසා; ඉංග්‍රීසියේ හේතුව පස්සේ) · by the way (කතාවට).\nයාළුවන්ට දිගු පිළිතුරක්; කෙටි මොහොතකට කෙටි පිළිතුරක්.",
+       "title": "Today's phrases",
+       "en": "Six blocks to talk about yourself:\n• I'm from… (your home town)\n• I live in… (where you live now)\n• At the moment I'm… (studying, working, looking for a job)\n• I'm really into… (something you love)\n• To be honest… (before a true feeling)\n• How about you? (always hand it back)",
+       "si": "ඔබ ගැන කියන්න කොටස් හයක්:\n• I'm from… (ඔබේ උපන් ගම)\n• I live in… (දැන් ජීවත් වන තැන)\n• At the moment I'm… (දැන් කරන දේ)\n• I'm really into… (ගොඩක් කැමති දෙයක්)\n• To be honest… (ඇත්ත හැඟීමක් කියන්න කලින්)\n• How about you? (හැමවිටම ආපහු අහන්න)",
        "examples": []
       },
       {
        "type": "model",
        "who": "sam",
        "lines": [
-        "Nice haircut!",
-        "Oh, thanks! I actually got it yesterday, because I have an interview next week. By the way, I like your shirt.",
-        "Or, if there's no time: Oh, thanks!"
+        "I'm from Kandy, but I live in Colombo now. At the moment I'm studying English. I'm really into cricket. To be honest, I'm a bit nervous today. How about you?"
        ],
-       "note": "Listen to the pattern: react, detail with actually and because, bounce back."
+       "note": ""
       },
       {
        "type": "drill",
        "who": "sam",
-       "prompt": "Nice haircut!",
+       "prompt": "Where are you from?",
        "models": [
-        "Oh, thanks! I actually got it yesterday, because I have an interview next week. By the way, I like your shirt.",
-        "Oh, thank you! I actually got it this morning, because it was too long. By the way, where do you get yours cut?"
+        "I'm from Galle, but I live in Colombo now. How about you?",
+        "I'm from Kandy. I live there with my family."
        ],
-       "point": "React, add a detail with because, bounce it back.",
-       "si": "ප්‍රතිචාරය + because සමඟ හේතුව + ආපසු ප්‍රශ්නයක්."
-      },
-      {
-       "type": "drill",
-       "who": "sam",
-       "prompt": "Did you cut it yourself?",
-       "models": [
-        "No, I got it at the barber.",
-        "Haha, no! I got it at the barber near my house."
-       ],
-       "point": "\"I cut it\" means YOU cut it. Say \"I got it…\"",
-       "si": "\"I cut it\" කිව්වොත් ඔබම කැපුවා කියන එකයි. \"I got it…\" කියන්න."
-      },
-      {
-       "type": "drill",
-       "who": "maya",
-       "prompt": "Hi! You must be new in this class.",
-       "models": [
-        "Oh, yes! I actually started today. I'm [his name], by the way. How long have you been here?",
-        "Yes, it's my first day, actually. I'm [his name]. Is the teacher strict?"
-       ],
-       "point": "Detail + your name + bounce it back.",
-       "si": ""
-      },
-      {
-       "type": "drill",
-       "who": "sam",
-       "prompt": "Hey, are you a movie fan?",
-       "models": [
-        "Oh, yes! I actually love movies, especially the Avengers, but my favourite is Hannibal. What about you?",
-        "Yes, a big one! I watch a movie almost every night, because it helps me relax. By the way, have you seen Endgame?"
-       ],
-       "point": "Use especially and but.",
+       "point": "I'm from… + How about you?",
        "si": ""
       },
       {
        "type": "drill",
        "who": "maya",
-       "prompt": "Your English is good!",
+       "prompt": "So what do you do?",
        "models": [
-        "Oh, really? Thanks! I'm practising every day, because I want to watch movies without subtitles. How did you learn yours?",
-        "Oh, thank you! I'm still learning."
+        "At the moment I'm studying IT at a college in Kandy.",
+        "At the moment I'm looking for a job."
        ],
-       "point": "Accept the compliment. Don't say \"No, it's bad.\"",
+       "point": "At the moment I'm…",
+       "si": ""
+      },
+      {
+       "type": "drill",
+       "who": "sam",
+       "prompt": "What do you do in your free time?",
+       "models": [
+        "I'm really into films, especially action films. How about you?",
+        "I'm really into cricket. I play every weekend."
+       ],
+       "point": "I'm really into…",
+       "si": ""
+      },
+      {
+       "type": "drill",
+       "who": "maya",
+       "prompt": "How do you feel about this class?",
+       "models": [
+        "To be honest, I'm a bit nervous, but I'm happy to be here.",
+        "To be honest, it's a bit hard, but I like it."
+       ],
+       "point": "To be honest…",
+       "si": ""
+      },
+      {
+       "type": "drill",
+       "who": "sam",
+       "prompt": "Tell me a little about yourself!",
+       "models": [
+        "I'm from Kandy and at the moment I'm studying IT. I'm really into films. How about you?"
+       ],
+       "point": "Three phrases in one answer.",
        "si": ""
       }
      ],
-     "note": ""
+     "short": false,
+     "mode": ""
+    },
+    {
+     "id": "talk321",
+     "title": "3-2-1 talk",
+     "why": "The same talk three times, each time shorter. Each round comes out smoother, so you feel what fast, easy speaking is like.",
+     "what": [
+      {
+       "name": "Round 1",
+       "desc": "talk about it for 3 minutes",
+       "mode": "recorded"
+      },
+      {
+       "name": "Round 2",
+       "desc": "the same in 2 minutes",
+       "mode": "recorded"
+      },
+      {
+       "name": "Round 3",
+       "desc": "the same in 1 minute",
+       "mode": "recorded"
+      },
+      {
+       "name": "Compare",
+       "desc": "hear round 1 next to the last round",
+       "mode": "listen"
+      }
+     ],
+     "steps": [
+      {
+       "type": "talk321",
+       "topic": "Who I am",
+       "points": [
+        "name",
+        "from",
+        "now",
+        "family",
+        "likes",
+        "a plan"
+       ]
+      }
+     ],
+     "short": true,
+     "mode": ""
     },
     {
      "id": "talk",
-     "title": "Meet someone and talk",
-     "effort": "hard",
+     "title": "Meet a new classmate",
+     "why": "This is the real thing: a real-life situation, and you don't know what they'll say. Use today's phrases and keep it going.",
+     "what": [
+      {
+       "name": "Before you talk",
+       "desc": "the situation, who, your goal",
+       "mode": "read · EN | සිං"
+      },
+      {
+       "name": "Talk",
+       "desc": "Face to face",
+       "mode": "you talk"
+      },
+      {
+       "name": "Summary",
+       "desc": "what happened and one better sentence",
+       "mode": "read"
+      }
+     ],
      "steps": [
       {
        "type": "chat",
        "who": "sam",
        "mode": "face",
-       "where": "The college canteen, your first day in a new class",
-       "en": "It's your first day in a new class. At the canteen, Sam (from your class) comes over. He'll give you a few compliments, then talk about movies. You don't know exactly what he'll say. Use the pattern, ask him things back, and keep it going.",
-       "si": "අද නව පන්තියේ ඔබේ පළමු දිනයයි. ආපනශාලාවේදී Sam (ඔබේ පන්තියෙන්) ඔබ ළඟට එනවා. ඔහු ප්‍රශංසා කිහිපයක් කර චිත්‍රපට ගැන කතා කරයි. ඔහු කියන දේ හරියටම දන්නේ නැහැ. රටාව භාවිත කරන්න, ආපසු ප්‍රශ්න අහන්න, කතාව දිගටම ගෙනියන්න.",
-       "goal": "Use the pattern; ask back 3+ times; 8+ turns.",
+       "where": "The college canteen, your first day",
+       "en": "It's your first day in a new class. At the canteen, Sam comes over and sits with you. Introduce yourself, ask about him, and keep it going.",
+       "si": "අද නව පන්තියේ ඔබේ පළමු දිනයයි. ආපනශාලාවේදී Sam ඔබ ළඟට ඇවිත් ඉඳගන්නවා. ඔබව හඳුන්වා දෙන්න, ඔහු ගැන අහන්න, කතාව දිගටම ගෙනියන්න.",
+       "goal": "Say who you are, and ask back at least 3 times.",
        "minTurns": 8,
-       "brief": "You meet him on his first day in a new class at the canteen. Give him 3 compliments (haircut, shirt, his English) one at a time, then talk about movies. Once, speak a little fast on purpose so he practises asking you to slow down.",
-       "opener": "Hey! You're new, right? Nice haircut, by the way!",
+       "brief": "He is new in class; you meet him in the canteen. Ask where he's from, what he does, his family, what he likes. Tell him about you too. Once, speak a little fast on purpose so he practises asking you to slow down.",
+       "opener": "Hey! You're new, right? I'm Sam. Mind if I sit here?",
        "scored": true,
-       "whoLine": "Sam, a new classmate",
-       "title": "New classmate"
+       "title": "New classmate",
+       "whoLine": "Sam, a classmate"
       }
      ],
-     "note": ""
+     "short": true,
+     "mode": "face"
     },
     {
      "id": "listen",
-     "title": "Listen and react",
-     "effort": "medium",
+     "title": "Listen to Maya",
+     "why": "Real people talk fast and long. Listen to the whole thing, answer, then tell it back in your own words.",
+     "what": [
+      {
+       "name": "Listen",
+       "desc": "a natural-speed story",
+       "mode": "voice only"
+      },
+      {
+       "name": "Answer",
+       "desc": "3 questions out loud",
+       "mode": "you talk"
+      },
+      {
+       "name": "Retell",
+       "desc": "tell it back in 4–5 sentences",
+       "mode": "you talk"
+      },
+      {
+       "name": "Quick reactions",
+       "desc": "react to short news",
+       "mode": "you talk"
+      }
+     ],
      "steps": [
       {
        "type": "listen",
        "who": "maya",
-       "title": "Why Maya loves Batman",
-       "script": "Okay, so, why do I love Batman? Well, first, he has no superpowers. He's just a man, and he's really smart. Second, the stories are dark and serious, not silly. My favourite is The Dark Knight, because the Joker is brilliant. And honestly, Batman is just cooler than Iron Man. Sorry, Sam!",
+       "title": "Maya introduces herself",
+       "script": "Okay, so, about me. I'm from Jaffna, but I moved to Colombo two years ago for work. At the moment I work in a small café near the beach, and to be honest, I love it, because I meet so many people. My family is still in Jaffna: my mum, my dad and my grandmother, who makes the best crab curry in the world. I miss her cooking a lot. In my free time I'm really into travelling. Last month I went to Ella with two friends and we climbed Little Adam's Peak at six in the morning. It was so cold! Next year I want to go to India. So that's me. How about you?",
        "questions": [
-        "Why does Maya say Batman is special?",
-        "Do you agree with her? Why or why not?",
-        "Ask Maya one question about Batman."
+        "Where is Maya from?",
+        "What does she do now?",
+        "What's one thing she misses?",
+        "Retell: tell me about Maya in 4 or 5 sentences."
        ]
       },
       {
-       "type": "info",
-       "title": "Reaction sounds",
-       "en": "Real listeners make small sounds. A flat \"Oh.\" sounds bored; a rising \"Oh!\" sounds interested.\n• Oh! / Oh, really? — surprise, interest\n• Oh no! / I'm sorry to hear that. — bad news\n• Wow! / Oh, nice! / That's great! — good news\n• Ah, I see. / Right. / Uh-huh. — I'm listening\n• Hmm… — thinking\n• No way! — shocking or funny",
-       "si": "සැබෑ සවන්දෙන්නෝ කුඩා ශබ්ද කරති. \"Oh.\" පැතලි නම් කම්මැලි ලෙස ඇසේ; ඉහළ යන \"Oh!\" උනන්දුවක් පෙන්වයි.\n• Oh! — පුදුමය, උනන්දුව\n• Oh no! — නරක පුවතක්\n• Wow! / Oh, nice! — හොඳ පුවතක්\n• Ah, I see. / Uh-huh. — මම අහගෙන ඉන්නවා\n• Hmm… — හිතනවා\n• No way! — විහිළුවක් හෝ කම්පනයක්",
-       "examples": []
-      },
-      {
        "type": "react",
-       "who": "maya",
+       "who": "both",
        "items": [
         {
-         "news": "I passed my driving test yesterday!",
-         "feel": "good"
-        },
-        {
-         "news": "My phone fell in the lake.",
-         "feel": "bad"
-        },
-        {
-         "news": "They're making a new Hannibal film!",
-         "feel": "surprise"
-        },
-        {
-         "news": "I'm thinking of learning the guitar.",
+         "news": "I just moved here from Jaffna.",
          "feel": "interest"
-        }
-       ]
-      }
-     ],
-     "note": ""
-    },
-    {
-     "id": "free",
-     "title": "Free chat",
-     "effort": "relaxed",
-     "steps": [
-      {
-       "type": "freechat",
-       "who": "maya",
-       "ideas": [
-        "Your clothes today",
-        "Your favourite movie",
-        "Your first day in class"
-       ],
-       "brief": ""
-      },
-      {
-       "type": "record",
-       "topic": "Tell Maya about yourself and the movies you love."
-      }
-     ],
-     "note": ""
-    }
-   ]
-  },
-  {
-   "day": 2,
-   "title": "Respond to comments, catching up and teasing",
-   "companion": "maya",
-   "connectors": [
-    "so",
-    "that's why",
-    "anyway"
-   ],
-   "sound": "f / p: film, favourite, funny vs pen, park, popcorn",
-   "review": "How have you been this week? What did you watch?",
-   "sessions": [
-    {
-     "id": "learn",
-     "title": "Learn",
-     "effort": "hard",
-     "steps": [
-      {
-       "type": "info",
-       "title": "Today: comments and teasing",
-       "en": "Friends say things like \"You look tired\" or \"Late again?\". Laugh → admit it or play along → add a detail → move on with \"anyway\".\nNew connectors: so · that's why · anyway.",
-       "si": "යාළුවන් \"You look tired\" හෝ \"Late again?\" වගේ දේවල් කියනවා. හිනාවෙන්න → පිළිගන්න නැත්නම් විහිළුවට එකඟ වෙන්න → විස්තරයක් → \"anyway\" සමඟ ඉදිරියට.\nනව connectors: so (ඒ නිසා) · that's why (ඒකයි) · anyway (කොහොම හරි).",
-       "examples": []
-      },
-      {
-       "type": "drill",
-       "who": "maya",
-       "prompt": "You look tired.",
-       "models": [
-        "Yeah, a bit. I slept late because I was watching Infinity War again. Have you seen it?",
-        "Honestly, yes. I had a long day, that's why. But I'm OK!"
-       ],
-       "point": "\"a bit\" makes it softer; \"that's why\" goes at the end.",
-       "si": ""
-      },
-      {
-       "type": "drill",
-       "who": "maya",
-       "prompt": "Long time no see!",
-       "models": [
-        "Oh, yes! It's been ages! I was busy at home, so I didn't go out much. How have you been?",
-        "I know! I was studying a lot. Anyway, how are you?"
-       ],
-       "point": "\"It's been ages!\" + so.",
-       "si": ""
-      },
-      {
-       "type": "drill",
-       "who": "maya",
-       "prompt": "Late again?",
-       "models": [
-        "Haha, sorry! The bus was late because of the rain. Anyway, I'm here now!",
-        "Sorry, sorry! The bus!"
-       ],
-       "point": "Laugh first; because of + a thing; anyway.",
-       "si": ""
-      },
-      {
-       "type": "drill",
-       "who": "sam",
-       "prompt": "Hannibal again? Aren't you scared?",
-       "models": [
-        "Haha, no way! I actually like it, because Lecter is so clever and calm. Anyway, you should watch it!",
-        "A little, honestly! But the story is so good, so I keep watching."
-       ],
-       "point": "Laugh, play along, move on with anyway.",
-       "si": ""
-      }
-     ],
-     "note": ""
-    },
-    {
-     "id": "talk",
-     "title": "Meet someone and talk",
-     "effort": "hard",
-     "steps": [
-      {
-       "type": "chat",
-       "who": "maya",
-       "mode": "video",
-       "where": "A video call from Maya after a long time",
-       "en": "Maya calls you on video after a long time. She wants to catch up, and she'll tease you a couple of times (about Marvel!). Laugh, play along, and keep it going.",
-       "si": "බොහෝ කාලෙකට පස්සේ Maya ඔබට වීඩියෝ ඇමතුමක් ගන්නවා. ඇයට අලුත් විස්තර දැනගන්න ඕනේ, ඇය ඔබට (Marvel ගැන!) දෙපාරක් විහිළු කරයි. හිනාවෙන්න, එකඟ වෙන්න, කතාව ගෙනියන්න.",
-       "goal": "Laugh and play along; 10+ turns.",
-       "minTurns": 10,
-       "brief": "You call him on video after a long time to catch up. Tease him twice, e.g. \"Still watching Marvel? Batman is better!\".",
-       "opener": "Hey! Long time no see! Where have you been?",
-       "scored": true,
-       "whoLine": "Maya, your friend from class",
-       "title": "Catching up"
-      }
-     ],
-     "note": ""
-    },
-    {
-     "id": "listen",
-     "title": "Listen and react",
-     "effort": "medium",
-     "steps": [
-      {
-       "type": "listen",
-       "who": "sam",
-       "title": "Sam's voice message",
-       "script": "Hey, it's Sam! So, my weekend was crazy. On Saturday I went to my cousin's birthday party, and we played cricket till it got dark. Then on Sunday I watched Thor: Ragnarok again. It's so funny! Anyway, call me back, okay?",
-       "questions": [
-        "What did Sam do on Saturday?",
-        "What do you think of Sam's weekend?",
-        "Ask Sam one question about his weekend."
-       ]
-      },
-      {
-       "type": "react",
-       "who": "sam",
-       "items": [
-        {
-         "news": "I lost my wallet on the bus.",
-         "feel": "bad"
         },
-        {
-         "news": "I got tickets for the new Avengers film!",
-         "feel": "good"
-        },
-        {
-         "news": "My little brother ate my birthday cake.",
-         "feel": "funny"
-        },
-        {
-         "news": "I'm moving to Kandy next month.",
-         "feel": "surprise"
-        }
-       ]
-      }
-     ],
-     "note": ""
-    },
-    {
-     "id": "free",
-     "title": "Free chat",
-     "effort": "relaxed",
-     "steps": [
-      {
-       "type": "freechat",
-       "who": "maya",
-       "ideas": [
-        "How your week has been",
-        "What you watched recently",
-        "Something funny that happened"
-       ],
-       "brief": ""
-      },
-      {
-       "type": "record",
-       "topic": "How have you been this week? What did you watch?"
-      }
-     ],
-     "note": ""
-    }
-   ]
-  },
-  {
-   "day": 3,
-   "title": "Start a conversation (openers)",
-   "companion": "both",
-   "connectors": [
-    "isn't it?",
-    "huh?",
-    "how about you?"
-   ],
-   "sound": "th: think, thanks, three, Thor and this, that, the, they",
-   "review": "Start a conversation with someone in a cinema queue.",
-   "sessions": [
-    {
-     "id": "learn",
-     "title": "Learn",
-     "effort": "hard",
-     "steps": [
-      {
-       "type": "info",
-       "title": "Today: you speak first",
-       "en": "Pattern: Notice → comment or question → add yourself → hand over.\nExample: \"Hot today, isn't it? I'm actually sweating already. How about you?\"\nIf the other person answers coldly (\"Yes.\"), ask a second question. If it's going nowhere: \"Anyway, nice talking to you!\"",
-       "si": "රටාව: දකින්න → අදහසක් හෝ ප්‍රශ්නයක් → ඔබ ගැන ටිකක් → අනෙකාට භාර දෙන්න.\nisn't it? = නේද? · How about you? = ඔයාට කොහොමද?\nඅනෙකා සීතල ලෙස පිළිතුරු දුන්නොත් (\"Yes.\"), දෙවන ප්‍රශ්නයක් අහන්න.",
-       "examples": []
-      },
-      {
-       "type": "drill",
-       "who": "sam",
-       "prompt": "(A hot day. You're standing next to a stranger. Speak first.)",
-       "models": [
-        "Hot today, isn't it? I'm actually sweating already. How about you? Do you like this weather?"
-       ],
-       "point": "Notice → comment → add yourself → hand over.",
-       "si": ""
-      },
-      {
-       "type": "drill",
-       "who": "maya",
-       "prompt": "(A bus stop. The bus is late. Speak first to the woman next to you.)",
-       "models": [
-        "Excuse me, are you waiting for the 138 too? It's really late today, huh? Do you take this bus every day?"
-       ],
-       "point": "Use \"huh?\" to sound friendly.",
-       "si": ""
-      },
-      {
-       "type": "drill",
-       "who": "sam",
-       "prompt": "(A cinema ticket queue for the new Marvel film. Speak first.)",
-       "models": [
-        "Excuse me, are you here for the Marvel film too? I've been waiting for it for weeks, so I'm really excited. How about you?"
-       ],
-       "point": "Add yourself with \"so\".",
-       "si": ""
-      },
-      {
-       "type": "drill",
-       "who": "maya",
-       "prompt": "(Someone is wearing a superhero T-shirt. Speak first.)",
-       "models": [
-        "Nice T-shirt! Are you a Marvel fan? Me too, actually. Who's your favourite?"
-       ],
-       "point": "Compliment + question.",
-       "si": ""
-      },
-      {
-       "type": "drill",
-       "who": "sam",
-       "prompt": "Yes.",
-       "models": [
-        "Oh, cool. Do you come here often?",
-        "Nice. Which part did you like most?"
-       ],
-       "point": "A cold answer! Don't give up: ask a second question.",
-       "si": ""
-      }
-     ],
-     "note": ""
-    },
-    {
-     "id": "talk",
-     "title": "Meet someone and talk",
-     "effort": "hard",
-     "steps": [
-      {
-       "type": "chat",
-       "who": "maya",
-       "mode": "face",
-       "where": "A cinema queue: you speak first to a stranger",
-       "en": "You're in the ticket queue for a new Marvel film. Next to you is a young woman you don't know. Start the conversation yourself: notice, comment, add yourself, hand over. She may be chatty or a bit cold. If she talks fast, ask her politely to slow down.",
-       "si": "ඔබ නව Marvel චිත්‍රපටයක ටිකට් පෝලිමේ ඉන්නවා. ඔබ ළඟ ඔබ නොදන්නා තරුණියක් ඉන්නවා. කතාව ඔබම පටන් ගන්න: දකින්න, අදහසක්, ඔබ ගැන, භාර දෙන්න. ඇය කතාබහට කැමති හෝ ටිකක් සීතල වෙන්න පුළුවන්. ඇය වේගයෙන් කතා කළොත් ආචාරශීලීව සෙමින් කතා කරන්න කියන්න.",
-       "goal": "He speaks first; opener + add yourself + hand over; rescue one cold reply; 8+ turns.",
-       "minTurns": 8,
-       "brief": "Play a stranger (not Maya) in a cinema queue. HE must speak first: wait for him. Be a little cold at first (short answers), then warm up if he asks good questions. Once, speak a little fast.",
-       "opener": "",
-       "scored": true,
-       "whoLine": "A young woman you don't know, in the cinema queue",
-       "title": "Cinema queue"
-      }
-     ],
-     "note": ""
-    },
-    {
-     "id": "listen",
-     "title": "Listen and react",
-     "effort": "medium",
-     "steps": [
-      {
-       "type": "listen",
-       "who": "sam",
-       "title": "A cinema announcement",
-       "script": "Good evening, everyone. The seven o'clock show of Avengers: Endgame is now open in Screen 2. Please have your tickets ready. The nine fifteen show is sold out. Popcorn and drinks are available near the entrance. Enjoy the film!",
-       "questions": [
-        "Which screen is Endgame in?",
-        "Would you rather see the 7 o'clock show or a later one? Why?",
-        "Ask a question you would ask the ticket staff."
-       ]
-      },
-      {
-       "type": "react",
-       "who": "maya",
-       "items": [
-        {
-         "news": "The bus is forty minutes late!",
-         "feel": "bad"
-        },
-        {
-         "news": "I found a hundred rupees in my old jeans!",
-         "feel": "good"
-        },
-        {
-         "news": "They say it'll rain all week.",
-         "feel": "bad"
-        },
-        {
-         "news": "Guess what? I'm learning to cook!",
-         "feel": "interest"
-        }
-       ]
-      }
-     ],
-     "note": ""
-    },
-    {
-     "id": "free",
-     "title": "Free chat",
-     "effort": "relaxed",
-     "steps": [
-      {
-       "type": "freechat",
-       "who": "sam",
-       "ideas": [
-        "Places where you meet new people",
-        "The weather today",
-        "A film you want to see"
-       ],
-       "brief": ""
-      },
-      {
-       "type": "record",
-       "topic": "Start a conversation with someone in a cinema queue."
-      }
-     ],
-     "note": ""
-    }
-   ]
-  },
-  {
-   "day": 4,
-   "title": "Keep the other person talking (\"Oh!\" day)",
-   "companion": "maya",
-   "connectors": [
-    "really?",
-    "and then?",
-    "what happened next?"
-   ],
-   "sound": "word endings -s / -ed: movies, likes, watched, finished",
-   "review": "Tell Maya about something that happened recently, and ask about her week.",
-   "sessions": [
-    {
-     "id": "learn",
-     "title": "Learn",
-     "effort": "hard",
-     "steps": [
-      {
-       "type": "info",
-       "title": "Today: keep them talking",
-       "en": "React with the right sound, then ask a follow-up question.\n• What happened: And then? · What did you do?\n• Feelings: How did you feel? · Were you scared?\n• Details: Where was that? · Who was with you?\n• Opinion: Did you like it?\nEcho questions: \"I went to Kandy.\" → \"Oh, Kandy? What did you do there?\"",
-       "si": "හරි ශබ්දයෙන් ප්‍රතිචාර දක්වා ඊළඟ ප්‍රශ්නයක් අහන්න.\nEcho ප්‍රශ්න: ඔවුන්ගේ ප්‍රධාන වචනය නැවත කියා අහන්න: \"Oh, Kandy? What did you do there?\"",
-       "examples": []
-      },
-      {
-       "type": "drill",
-       "who": "maya",
-       "prompt": "Last Saturday I went to see a film…",
-       "models": [
-        "Oh, nice! Which film?"
-       ],
-       "point": "React + follow-up.",
-       "si": ""
-      },
-      {
-       "type": "drill",
-       "who": "maya",
-       "prompt": "…a Batman film. But in the middle, the power went off!",
-       "models": [
-        "Oh no! What happened next?"
-       ],
-       "point": "Right sound for bad news + follow-up.",
-       "si": ""
-      },
-      {
-       "type": "drill",
-       "who": "maya",
-       "prompt": "We waited forty minutes in the dark!",
-       "models": [
-        "Forty minutes? Really? Did they give your money back?"
-       ],
-       "point": "Echo question.",
-       "si": ""
-      },
-      {
-       "type": "drill",
-       "who": "sam",
-       "prompt": "I went to Kandy last weekend.",
-       "models": [
-        "Oh, Kandy? What did you do there?"
-       ],
-       "point": "Echo question.",
-       "si": ""
-      },
-      {
-       "type": "drill",
-       "who": "sam",
-       "prompt": "I watched The Dark Knight again yesterday.",
-       "models": [
-        "Oh, The Dark Knight? How many times have you seen it?"
-       ],
-       "point": "Echo question.",
-       "si": ""
-      }
-     ],
-     "note": ""
-    },
-    {
-     "id": "talk",
-     "title": "Meet someone and talk",
-     "effort": "hard",
-     "steps": [
-      {
-       "type": "chat",
-       "who": "maya",
-       "mode": "phone",
-       "where": "A phone call from Maya with news",
-       "en": "Maya phones you with some news: something good, something bad and something funny (one about a film). On the phone there's no face to help, so react with your voice, ask follow-up questions, and ask when you don't catch something.",
-       "si": "Maya ඔබට දුරකථනයෙන් පුවත් කිහිපයක් කියයි: හොඳ දෙයක්, නරක දෙයක් සහ විහිළු දෙයක් (එකක් චිත්‍රපටයක් ගැන). දුරකථනයේදී මුහුණක් නැති නිසා හඬින් ප්‍රතිචාර දක්වා, ප්‍රශ්න අසා, නොතේරුණොත් අහන්න.",
-       "goal": "Right reaction every time; 6+ follow-ups; ask once when unsure; 12+ turns.",
-       "minTurns": 12,
-       "brief": "You phone him with news, one piece at a time: good news, then bad news, then something funny about a film. Pause after each piece so he reacts and asks.",
-       "opener": "Hey! It's Maya. You won't believe what happened today!",
-       "scored": true,
-       "whoLine": "Maya, your friend from class",
-       "title": "Maya's news"
-      }
-     ],
-     "note": ""
-    },
-    {
-     "id": "listen",
-     "title": "Listen and react",
-     "effort": "medium",
-     "steps": [
-      {
-       "type": "listen",
-       "who": "sam",
-       "title": "Sam's story (guess what happens)",
-       "script": "So, last week I was at the cinema with my brother. The film started, and suddenly a cat walked in front of the screen! Everyone started laughing. Then the cat sat down in the front row, like it wanted to watch the film too!",
-       "questions": [
-        "What happened at the cinema?",
-        "What would you do if a cat sat next to you in the cinema?",
-        "Ask Sam a follow-up question about the cat."
-       ]
-      },
-      {
-       "type": "react",
-       "who": "sam",
-       "items": [
-        {
-         "news": "I broke my phone screen.",
-         "feel": "bad"
-        },
-        {
-         "news": "I won a free pizza!",
-         "feel": "good"
-        },
-        {
-         "news": "My teacher sang in class today!",
-         "feel": "funny"
-        },
-        {
-         "news": "I met an actor at the airport!",
-         "feel": "surprise"
-        },
-        {
-         "news": "My grandmother is in hospital.",
-         "feel": "bad"
-        }
-       ]
-      }
-     ],
-     "note": ""
-    },
-    {
-     "id": "free",
-     "title": "Free chat",
-     "effort": "relaxed",
-     "steps": [
-      {
-       "type": "freechat",
-       "who": "maya",
-       "ideas": [
-        "Something that happened to you this week",
-        "A trip you took",
-        "A funny family story"
-       ],
-       "brief": ""
-      },
-      {
-       "type": "record",
-       "topic": "React to news: tell Maya about something that happened recently, and ask her about her week."
-      }
-     ],
-     "note": ""
-    }
-   ]
-  },
-  {
-   "day": 5,
-   "title": "Hold a longer turn (a 1-minute story)",
-   "companion": "sam",
-   "connectors": [
-    "meanwhile",
-    "suddenly",
-    "in the end"
-   ],
-   "sound": "word stress: YES-ter-day, a-VEN-gers, DAN-ger-ous, re-VENGE, e-SCAPE",
-   "review": "Retell your favourite film in one minute.",
-   "sessions": [
-    {
-     "id": "learn",
-     "title": "Learn",
-     "effort": "hard",
-     "steps": [
-      {
-       "type": "info",
-       "title": "Words first",
-       "en": "brilliant = very, very clever · dangerous = can hurt you · revenge = hurting someone back · enemy = a person against you · escape = get away",
-       "si": "brilliant = ඉතා දක්ෂ · dangerous = අනතුරුදායක · revenge = පළිගැනීම · enemy = සතුරා · escape = පැනයාම",
-       "examples": []
-      },
-      {
-       "type": "info",
-       "title": "Story shape",
-       "en": "Hook → first → then → meanwhile → suddenly → in the end → how I felt.\nHooks: \"You won't believe what happened…\" · \"Guess what?\" · \"Have you seen…? It's about…\"",
-       "si": "කතාවේ හැඩය: ආකර්ෂණය → මුලින්ම → ඊට පස්සේ → ඒ අතරේ (meanwhile) → හදිස්සියේම (suddenly) → අන්තිමට (in the end) → මට දැනුණු දේ.",
-       "examples": []
-      },
-      {
-       "type": "model",
-       "who": "sam",
-       "lines": [
-        "You won't believe what happened yesterday. First, I woke up late, because my phone was dead. Then I ran to the bus stop, but the bus was leaving. Meanwhile, it started raining! Suddenly, my friend stopped his bike and gave me a ride. In the end, I was only five minutes late. I was so lucky!"
-       ],
-       "note": "A 1-minute story from life. Listen for meanwhile, suddenly, in the end."
-      },
-      {
-       "type": "drill",
-       "who": "sam",
-       "prompt": "So, what happened to you this week? Tell me a short story!",
-       "models": [],
-       "point": "Use first, then, suddenly, in the end.",
-       "si": ""
-      },
-      {
-       "type": "drill",
-       "who": "sam",
-       "prompt": "I've never seen Hannibal. What's it about?",
-       "models": [
-        "Hannibal is about a brilliant but dangerous man called Hannibal Lecter. At the start, he's living secretly in Italy. Meanwhile, an FBI agent called Clarice is in trouble at work. Then a rich man who wants revenge starts hunting Lecter. Suddenly, Lecter is caught, but Clarice saves him, even though he's her enemy. In the end, he escapes again. I love it because Lecter is so calm and clever."
-       ],
-       "point": "Retell the film in about a minute.",
-       "si": ""
-      }
-     ],
-     "note": ""
-    },
-    {
-     "id": "talk",
-     "title": "Meet someone and talk",
-     "effort": "hard",
-     "steps": [
-      {
-       "type": "chat",
-       "who": "sam",
-       "mode": "video",
-       "where": "A video call: Sam hasn't seen Hannibal",
-       "en": "Sam hasn't seen Hannibal and thinks it's too scary. Tell him a story from your life and retell the film. Answer his questions and try to convince him to watch it.",
-       "si": "Sam Hannibal බලලා නැහැ, ඔහු හිතන්නේ එය බය හිතෙන චිත්‍රපටයක් කියලා. ඔබේ ජීවිතයෙන් කතාවක් කියා චිත්‍රපටය නැවත කියන්න. ඔහුගේ ප්‍රශ්නවලට පිළිතුරු දී එය බලන්න ඔහුව ඒත්තු ගන්වන්න.",
-       "goal": "Tell 2 stories; answer follow-ups; convince Sam.",
-       "minTurns": 10,
-       "brief": "You haven't seen Hannibal and think it's too scary. Ask him what it's about, react with Oh! and And then?, ask follow-ups, and let him convince you.",
-       "opener": "Hey! So everyone keeps talking about Hannibal. What's it about? Isn't it too scary?",
-       "scored": true,
-       "whoLine": "Sam, your friend from class",
-       "title": "Hannibal?"
-      }
-     ],
-     "note": ""
-    },
-    {
-     "id": "listen",
-     "title": "Listen and react",
-     "effort": "medium",
-     "steps": [
-      {
-       "type": "listen",
-       "who": "maya",
-       "title": "Nila tells a famous story",
-       "script": "Long ago, a clever boy called Aladdin found an old lamp in a cave. When he rubbed it, a genie came out and offered him three wishes. Aladdin used his wishes wisely, and in the end, he set the genie free.",
-       "questions": [
-        "Retell the story in three sentences.",
-        "What would your three wishes be?",
-        "Ask one question about the story."
-       ]
-      },
-      {
-       "type": "react",
-       "who": "maya",
-       "items": [
-        {
-         "news": "I finished my first painting!",
-         "feel": "good"
-        },
-        {
-         "news": "Our trip got cancelled.",
-         "feel": "bad"
-        },
-        {
-         "news": "A monkey stole my sandwich!",
-         "feel": "funny"
-        },
-        {
-         "news": "I'm getting a puppy!",
-         "feel": "good"
-        }
-       ]
-      }
-     ],
-     "note": ""
-    },
-    {
-     "id": "free",
-     "title": "Free chat",
-     "effort": "relaxed",
-     "steps": [
-      {
-       "type": "freechat",
-       "who": "sam",
-       "ideas": [
-        "The best film you've ever seen",
-        "A lucky day",
-        "A scary moment"
-       ],
-       "brief": ""
-      },
-      {
-       "type": "record",
-       "topic": "Retell your favourite film in one minute."
-      }
-     ],
-     "note": ""
-    }
-   ]
-  },
-  {
-   "day": 6,
-   "title": "Full conversations",
-   "companion": "both",
-   "connectors": [
-    "well",
-    "let me think",
-    "I mean"
-   ],
-   "sound": "questions that go up: Really? ↗ Are you a Marvel fan? ↗",
-   "review": "Talk about your week.",
-   "sessions": [
-    {
-     "id": "learn",
-     "title": "Learn",
-     "effort": "hard",
-     "steps": [
-      {
-       "type": "info",
-       "title": "Today: the whole conversation",
-       "en": "Start → respond → keep it going → tell a story → close.\nBuy time instead of freezing: \"Well…\" · \"Let me think…\" · \"I mean…\"\nClose politely: \"Anyway, I'd better go. It was nice talking to you!\" · \"Sorry, my bus is here. Nice meeting you!\"",
-       "si": "පටන් ගන්න → ප්‍රතිචාර දක්වන්න → දිගටම ගෙනියන්න → කතාවක් කියන්න → අවසන් කරන්න.\nහිර නොවී කාලය ගන්න: \"Well…\" · \"Let me think…\" · \"I mean…\"\nආචාරශීලීව අවසන් කරන්න: \"Anyway, I'd better go. It was nice talking to you!\"",
-       "examples": []
-      },
-      {
-       "type": "drill",
-       "who": "sam",
-       "prompt": "So, when are YOU getting married?",
-       "models": [
-        "Haha, well… let me think… not for a long time, I hope! I mean, I'm still studying. What about you?"
-       ],
-       "point": "A surprise question: buy time, then answer.",
-       "si": ""
-      },
-      {
-       "type": "drill",
-       "who": "maya",
-       "prompt": "Better than Endgame? What do YOU think?",
-       "models": [
-        "Hmm, well, I mean, Endgame was amazing, but this one was really fun too. Let's just say both are great!"
-       ],
-       "point": "Give an opinion and keep the peace.",
-       "si": ""
-      },
-      {
-       "type": "drill",
-       "who": "sam",
-       "prompt": "(It's time to go. Close the conversation politely.)",
-       "models": [
-        "Anyway, I'd better go. It was nice talking to you!",
-        "Oh, look at the time! I have to run. See you tomorrow!"
-       ],
-       "point": "Close politely.",
-       "si": ""
-      }
-     ],
-     "note": ""
-    },
-    {
-     "id": "talk",
-     "title": "Meet someone and talk",
-     "effort": "hard",
-     "steps": [
-      {
-       "type": "chat",
-       "who": "maya",
-       "mode": "face",
-       "where": "A cousin's wedding: talking to your uncle",
-       "en": "You're at your cousin's wedding. Your uncle comes over to chat, and he likes to tease. He might ask when YOU are getting married! Start or respond naturally, keep it going, tell a short story, and close politely.",
-       "si": "ඔබ ඔබේ ඥාති සහෝදරයාගේ මංගල උත්සවයේ. ඔබේ මාමා කතා කරන්න එනවා, ඔහු විහිළු කරන්න කැමතියි. ඔහු \"ඔයා කවදද කසාද බඳින්නේ?\" කියා අහන්න පුළුවන්! ස්වාභාවිකව කතා කර, කතාවක් කියා, ආචාරශීලීව අවසන් කරන්න.",
-       "goal": "Reaction sounds, follow-ups, one longer answer, a time-buyer instead of silence, a polite close; 12+ turns.",
-       "minTurns": 12,
-       "brief": "Play his uncle (not Maya) at a cousin's wedding: friendly, a bit of a tease. Ask about his studies and films, and at some point ask: \"So, when are YOU getting married?\"",
-       "opener": "Ah, there you are! Look at you, all dressed up! How have you been?",
-       "scored": true,
-       "whoLine": "Your uncle, at your cousin's wedding",
-       "title": "A cousin's wedding"
-      }
-     ],
-     "note": ""
-    },
-    {
-     "id": "listen",
-     "title": "Listen and react",
-     "effort": "medium",
-     "steps": [
-      {
-       "type": "listen",
-       "who": "sam",
-       "title": "Two people at a bus stop",
-       "script": "Excuse me, is this the bus to Colombo? Yes, it is, but it's always late. Oh no, I have an interview at ten! Really? Good luck! What's the job? It's at a bank. Oh, nice! Well, here it comes now. Finally!",
-       "questions": [
-        "Who are the two people and what are they talking about?",
-        "Have you ever been late for something important?",
-        "Ask one question you'd ask the person with the interview."
-       ]
-      },
-      {
-       "type": "react",
-       "who": "maya",
-       "items": [
         {
          "news": "I got the job!",
          "feel": "good"
         },
         {
-         "news": "I failed my exam.",
+         "news": "I lost my wallet on the bus.",
          "feel": "bad"
         },
         {
-         "news": "Did you know? Thor's hammer has a name: Mjolnir.",
-         "feel": "interest"
-        },
-        {
-         "news": "My cat learned to open the fridge!",
-         "feel": "funny"
+         "news": "My grandmother is 92!",
+         "feel": "surprise"
         }
        ]
       }
      ],
-     "note": ""
+     "short": false,
+     "mode": ""
     },
     {
-     "id": "free",
-     "title": "Free chat",
-     "effort": "relaxed",
+     "id": "review",
+     "title": "Review",
+     "why": "The phrases that keep coming back, said again from memory. Then you hear today's talk next to yesterday's.",
+     "what": [
+      {
+       "name": "Say them again",
+       "desc": "the phrases that keep coming back",
+       "mode": "you talk"
+      },
+      {
+       "name": "Then and now",
+       "desc": "today's talk next to yesterday's",
+       "mode": "listen"
+      }
+     ],
+     "steps": [
+      {
+       "type": "sayagain"
+      },
+      {
+       "type": "compare"
+      }
+     ],
+     "short": false,
+     "mode": ""
+    }
+   ]
+  },
+  {
+   "day": 2,
+   "title": "My family",
+   "overview": "Phrases to talk about the people at home, a video call with Maya about your family, and Sam's story about a big family lunch.",
+   "byTheEnd": "By the end you can describe your family and say what you usually do together.",
+   "phrases": [
+    "I live with…",
+    "My brother is the kind of person who…",
+    "We usually…",
+    "We get on well.",
+    "He's older than me.",
+    "What about your family?"
+   ],
+   "companion": "maya",
+   "sessions": [
+    {
+     "id": "shadow",
+     "title": "Shadowing",
+     "why": "Repeating right after Sam or Maya, at their speed, makes English rhythm your own. You stop translating and start copying how real people sound.",
+     "what": [
+      {
+       "name": "Listen",
+       "desc": "Maya says short lines",
+       "mode": "voice only"
+      },
+      {
+       "name": "Echo",
+       "desc": "repeat right after each line, at the same speed",
+       "mode": "you talk"
+      }
+     ],
+     "steps": [
+      {
+       "type": "shadow",
+       "who": "maya",
+       "lines": [
+        "I live with my parents and my brother.",
+        "My brother is the kind of person who never stops talking.",
+        "We usually eat together on Sundays.",
+        "We get on really well.",
+        "My sister is older than me.",
+        "What about your family?"
+       ]
+      }
+     ],
+     "short": true,
+     "mode": ""
+    },
+    {
+     "id": "phrases",
+     "title": "Learn today's phrases",
+     "why": "Ready-made phrases come out fast. Learn them as whole blocks, and you don't have to build sentences word by word.",
+     "what": [
+      {
+       "name": "Listen",
+       "desc": "Maya uses today's phrases",
+       "mode": "voice only"
+      },
+      {
+       "name": "Understand",
+       "desc": "when to use each",
+       "mode": "read · EN | සිං"
+      },
+      {
+       "name": "Practise",
+       "desc": "answer Sam and Maya with them",
+       "mode": "you talk"
+      }
+     ],
+     "steps": [
+      {
+       "type": "info",
+       "title": "Today's phrases",
+       "en": "Phrases for family:\n• I live with… (who is at home)\n• My brother is the kind of person who… (describe someone)\n• We usually… (what you do together)\n• We get on well. (you like each other)\n• He's older / younger than me.\n• What about your family? (hand it back)",
+       "si": "පවුල ගැන වාක්‍ය:\n• I live with… (ගෙදර ඉන්නේ කවුද)\n• My brother is the kind of person who… (කෙනෙක් ගැන විස්තර කරන්න)\n• We usually… (එකට කරන දේ)\n• We get on well. (අපි හොඳින් ඉන්නවා)\n• He's older / younger than me. (මට වඩා වැඩිමල් / බාල)\n• What about your family? (ආපහු අහන්න)",
+       "examples": []
+      },
+      {
+       "type": "model",
+       "who": "maya",
+       "lines": [
+        "I live with my mum, my dad and my two little brothers. My brother Kavi is the kind of person who eats everything in the fridge! We usually eat together on Sundays. We get on well. What about your family?"
+       ],
+       "note": ""
+      },
+      {
+       "type": "drill",
+       "who": "maya",
+       "prompt": "Who do you live with?",
+       "models": [
+        "I live with my parents and my younger sister.",
+        "I live with my mother and my grandmother."
+       ],
+       "point": "I live with…",
+       "si": ""
+      },
+      {
+       "type": "drill",
+       "who": "sam",
+       "prompt": "Tell me about someone in your family.",
+       "models": [
+        "My brother is the kind of person who always makes us laugh.",
+        "My mother is the kind of person who works very hard."
+       ],
+       "point": "…is the kind of person who…",
+       "si": ""
+      },
+      {
+       "type": "drill",
+       "who": "maya",
+       "prompt": "What do you do together as a family?",
+       "models": [
+        "We usually eat together in the evening and watch TV.",
+        "We usually visit my grandmother on Sundays."
+       ],
+       "point": "We usually…",
+       "si": ""
+      },
+      {
+       "type": "drill",
+       "who": "sam",
+       "prompt": "Do you fight with your brother or sister?",
+       "models": [
+        "Sometimes, but we get on well. He's older than me.",
+        "Not really. We get on really well."
+       ],
+       "point": "We get on well · older than me",
+       "si": ""
+      },
+      {
+       "type": "drill",
+       "who": "maya",
+       "prompt": "I've got three sisters. It's always noisy at home!",
+       "models": [
+        "Wow, three! What about your family? Is it noisy too?",
+        "Oh, I can imagine! I've only got one brother. What are your sisters like?"
+       ],
+       "point": "React, then ask back.",
+       "si": ""
+      }
+     ],
+     "short": false,
+     "mode": ""
+    },
+    {
+     "id": "talk321",
+     "title": "3-2-1 talk",
+     "why": "The same talk three times, each time shorter. Each round comes out smoother, so you feel what fast, easy speaking is like.",
+     "what": [
+      {
+       "name": "Round 1",
+       "desc": "talk about it for 3 minutes",
+       "mode": "recorded"
+      },
+      {
+       "name": "Round 2",
+       "desc": "the same in 2 minutes",
+       "mode": "recorded"
+      },
+      {
+       "name": "Round 3",
+       "desc": "the same in 1 minute",
+       "mode": "recorded"
+      },
+      {
+       "name": "Compare",
+       "desc": "hear round 1 next to the last round",
+       "mode": "listen"
+      }
+     ],
+     "steps": [
+      {
+       "type": "talk321",
+       "topic": "My family",
+       "points": [
+        "who",
+        "names",
+        "what they do",
+        "what they're like",
+        "what we do together"
+       ]
+      }
+     ],
+     "short": true,
+     "mode": ""
+    },
+    {
+     "id": "talk",
+     "title": "Video call with Maya",
+     "why": "This is the real thing: a real-life situation, and you don't know what they'll say. Use today's phrases and keep it going.",
+     "what": [
+      {
+       "name": "Before you talk",
+       "desc": "the situation, who, your goal",
+       "mode": "read · EN | සිං"
+      },
+      {
+       "name": "Talk",
+       "desc": "Video call",
+       "mode": "you talk"
+      },
+      {
+       "name": "Summary",
+       "desc": "what happened and one better sentence",
+       "mode": "read"
+      }
+     ],
+     "steps": [
+      {
+       "type": "chat",
+       "who": "maya",
+       "mode": "video",
+       "where": "A video call from Maya in the evening",
+       "en": "Maya video-calls you in the evening. She wants to know about your family. Tell her, and ask about hers.",
+       "si": "සවස Maya ඔබට වීඩියෝ ඇමතුමක් ගන්නවා. ඇයට ඔබේ පවුල ගැන දැනගන්න ඕනේ. ඇයට කියන්න, ඇගේ පවුල ගැනත් අහන්න.",
+       "goal": "Greet her first, talk about your family, ask about hers, and say goodbye before you hang up.",
+       "minTurns": 10,
+       "brief": "Video-call him in the evening. Ask about his family: who he lives with, what they're like, what they do together. Share about your family in Jaffna. End warmly when it's time.",
+       "opener": "",
+       "scored": true,
+       "title": "Maya's video call",
+       "whoLine": "Maya, a classmate"
+      }
+     ],
+     "short": true,
+     "mode": "video"
+    },
+    {
+     "id": "listen",
+     "title": "Sam's big family lunch",
+     "why": "Real people talk fast and long. Listen to the whole thing, answer, then tell it back in your own words.",
+     "what": [
+      {
+       "name": "Listen",
+       "desc": "a natural-speed story",
+       "mode": "voice only"
+      },
+      {
+       "name": "Answer",
+       "desc": "3 questions out loud",
+       "mode": "you talk"
+      },
+      {
+       "name": "Retell",
+       "desc": "tell it back in 4–5 sentences",
+       "mode": "you talk"
+      },
+      {
+       "name": "Quick reactions",
+       "desc": "react to short news",
+       "mode": "you talk"
+      }
+     ],
+     "steps": [
+      {
+       "type": "listen",
+       "who": "sam",
+       "title": "Sam's big family lunch",
+       "script": "So last Sunday was crazy. My aunt came from Kurunegala with her whole family, so we were sixteen people in our small house! My mum cooked from six in the morning: rice, chicken curry, dhal, and of course her famous pol sambol. My little brothers had to sit on the floor because there weren't enough chairs. My uncle is the kind of person who tells the same joke every time, and everyone laughs anyway. After lunch we all watched the cricket match together, and when Sri Lanka won, my grandfather danced! It was noisy and tiring, but honestly, it was the best day this month.",
+       "questions": [
+        "How many people were in Sam's house?",
+        "What did his mum cook?",
+        "What did his grandfather do?",
+        "Retell: tell me about Sam's family lunch in 4 or 5 sentences."
+       ]
+      },
+      {
+       "type": "react",
+       "who": "both",
+       "items": [
+        {
+         "news": "My sister is getting married!",
+         "feel": "good"
+        },
+        {
+         "news": "My grandfather is in hospital.",
+         "feel": "bad"
+        },
+        {
+         "news": "We're sixteen people at home on Sunday!",
+         "feel": "surprise"
+        },
+        {
+         "news": "My brother wants to be a pilot.",
+         "feel": "interest"
+        }
+       ]
+      }
+     ],
+     "short": false,
+     "mode": ""
+    },
+    {
+     "id": "review",
+     "title": "Review",
+     "why": "The phrases that keep coming back, said again from memory. Then you hear today's talk next to yesterday's.",
+     "what": [
+      {
+       "name": "Say them again",
+       "desc": "the phrases that keep coming back",
+       "mode": "you talk"
+      },
+      {
+       "name": "Then and now",
+       "desc": "today's talk next to yesterday's",
+       "mode": "listen"
+      }
+     ],
+     "steps": [
+      {
+       "type": "sayagain"
+      },
+      {
+       "type": "compare"
+      }
+     ],
+     "short": false,
+     "mode": ""
+    }
+   ]
+  },
+  {
+   "day": 3,
+   "title": "Reacting and buying time",
+   "overview": "Learn how to react to news and how to buy time instead of freezing, then Maya calls you with her news.",
+   "byTheEnd": "By the end you react naturally and never go silent: you buy time and then answer.",
+   "phrases": [
+    "Really?",
+    "Oh no!",
+    "That's great!",
+    "Let me think…",
+    "How can I put it…",
+    "Well, actually…"
+   ],
+   "companion": "maya",
+   "sessions": [
+    {
+     "id": "shadow",
+     "title": "Shadowing",
+     "why": "Repeating right after Sam or Maya, at their speed, makes English rhythm your own. You stop translating and start copying how real people sound.",
+     "what": [
+      {
+       "name": "Listen",
+       "desc": "Maya says short lines",
+       "mode": "voice only"
+      },
+      {
+       "name": "Echo",
+       "desc": "repeat right after each line, at the same speed",
+       "mode": "you talk"
+      }
+     ],
+     "steps": [
+      {
+       "type": "shadow",
+       "who": "maya",
+       "lines": [
+        "Really? That's great!",
+        "Oh no, I'm sorry to hear that.",
+        "Let me think for a second.",
+        "Hmm, how can I put it…",
+        "Well, actually, I'm not sure.",
+        "That's a good question."
+       ]
+      }
+     ],
+     "short": true,
+     "mode": ""
+    },
+    {
+     "id": "phrases",
+     "title": "Learn today's phrases",
+     "why": "Ready-made phrases come out fast. Learn them as whole blocks, and you don't have to build sentences word by word.",
+     "what": [
+      {
+       "name": "Listen",
+       "desc": "Maya uses today's phrases",
+       "mode": "voice only"
+      },
+      {
+       "name": "Understand",
+       "desc": "when to use each",
+       "mode": "read · EN | සිං"
+      },
+      {
+       "name": "Practise",
+       "desc": "answer Sam and Maya with them",
+       "mode": "you talk"
+      }
+     ],
+     "steps": [
+      {
+       "type": "info",
+       "title": "Today's phrases",
+       "en": "React first, then answer. When you need time, say it out loud instead of going silent:\n• Really? / Oh no! / That's great! (react)\n• Let me think… / How can I put it… (buy time)\n• Well, actually… (start an answer)\n• That's a good question. (more time)",
+       "si": "මුලින්ම ප්‍රතිචාර දක්වන්න, ඊට පස්සේ පිළිතුරු දෙන්න. වෙලාව ඕනේ නම් නිශ්ශබ්ද වෙනවා වෙනුවට එය කියන්න:\n• Really? / Oh no! / That's great!\n• Let me think… / How can I put it… (හිතන්න වෙලාව)\n• Well, actually… (පිළිතුර පටන් ගන්න)\n• That's a good question.",
+       "examples": []
+      },
+      {
+       "type": "model",
+       "who": "maya",
+       "lines": [
+        "Really? That's great news! Hmm, let me think… how can I put it… Well, actually, I'm really happy for you."
+       ],
+       "note": ""
+      },
+      {
+       "type": "drill",
+       "who": "maya",
+       "prompt": "I got the job at the hotel!",
+       "models": [
+        "Really? That's great! When do you start?",
+        "Wow, that's great news! Congratulations!"
+       ],
+       "point": "React to good news, then ask.",
+       "si": ""
+      },
+      {
+       "type": "drill",
+       "who": "sam",
+       "prompt": "My bike got stolen yesterday.",
+       "models": [
+        "Oh no! I'm sorry to hear that. Where was it?",
+        "Oh no, that's terrible! Did you go to the police?"
+       ],
+       "point": "React to bad news, then ask.",
+       "si": ""
+      },
+      {
+       "type": "drill",
+       "who": "maya",
+       "prompt": "What's the best thing about your town?",
+       "models": [
+        "Let me think… Well, actually, the food is really good.",
+        "Hmm, how can I put it… it's quiet and green."
+       ],
+       "point": "Buy time, then answer.",
+       "si": ""
+      },
+      {
+       "type": "drill",
+       "who": "sam",
+       "prompt": "Why do you want to learn English?",
+       "models": [
+        "That's a good question. Let me think… I want a better job.",
+        "Well, actually, I want to travel and talk to people."
+       ],
+       "point": "That's a good question + answer.",
+       "si": ""
+      },
+      {
+       "type": "drill",
+       "who": "maya",
+       "prompt": "Guess what? My cousin is moving to Canada.",
+       "models": [
+        "Really? Wow! When is she going?",
+        "Oh, really? Are you sad?"
+       ],
+       "point": "Really? + a question.",
+       "si": ""
+      }
+     ],
+     "short": false,
+     "mode": ""
+    },
+    {
+     "id": "talk321",
+     "title": "3-2-1 talk",
+     "why": "The same talk three times, each time shorter. Each round comes out smoother, so you feel what fast, easy speaking is like.",
+     "what": [
+      {
+       "name": "Round 1",
+       "desc": "talk about it for 3 minutes",
+       "mode": "recorded"
+      },
+      {
+       "name": "Round 2",
+       "desc": "the same in 2 minutes",
+       "mode": "recorded"
+      },
+      {
+       "name": "Round 3",
+       "desc": "the same in 1 minute",
+       "mode": "recorded"
+      },
+      {
+       "name": "Compare",
+       "desc": "hear round 1 next to the last round",
+       "mode": "listen"
+      }
+     ],
+     "steps": [
+      {
+       "type": "talk321",
+       "topic": "A good thing and a bad thing this week",
+       "points": [
+        "the good thing",
+        "what happened",
+        "the bad thing",
+        "how I felt",
+        "what now"
+       ]
+      }
+     ],
+     "short": true,
+     "mode": ""
+    },
+    {
+     "id": "talk",
+     "title": "Maya's news",
+     "why": "This is the real thing: a real-life situation, and you don't know what they'll say. Use today's phrases and keep it going.",
+     "what": [
+      {
+       "name": "Before you talk",
+       "desc": "the situation, who, your goal",
+       "mode": "read · EN | සිං"
+      },
+      {
+       "name": "Talk",
+       "desc": "Phone call",
+       "mode": "you talk"
+      },
+      {
+       "name": "Summary",
+       "desc": "what happened and one better sentence",
+       "mode": "read"
+      }
+     ],
+     "steps": [
+      {
+       "type": "chat",
+       "who": "maya",
+       "mode": "phone",
+       "where": "A phone call from Maya",
+       "en": "Maya calls you. She has some news, good and bad. React to each piece, ask questions, and keep the call going.",
+       "si": "Maya ඔබට කතා කරනවා. ඇයට හොඳ සහ නරක පුවත් තියෙනවා. සෑම එකකටම ප්‍රතිචාර දක්වන්න, ප්‍රශ්න අහන්න, කතාව ගෙනියන්න.",
+       "goal": "React to each piece of news and ask a follow-up question each time.",
+       "minTurns": 10,
+       "brief": "Phone him with three pieces of news, one at a time: you got a pay rise at the café (good), your phone screen broke (bad), your cousin is getting married next month (surprise). Let him react and ask before you give the next one. Ask him one hard question so he must buy time.",
+       "opener": "Hey! It's Maya. Have you got a minute? I've got so much news!",
+       "scored": true,
+       "title": "Maya's news",
+       "whoLine": "Maya, on the phone"
+      }
+     ],
+     "short": true,
+     "mode": "phone"
+    },
+    {
+     "id": "listen",
+     "title": "Three pieces of news",
+     "why": "Real people talk fast and long. Listen to the whole thing, answer, then tell it back in your own words.",
+     "what": [
+      {
+       "name": "Listen",
+       "desc": "a natural-speed story",
+       "mode": "voice only"
+      },
+      {
+       "name": "Answer",
+       "desc": "3 questions out loud",
+       "mode": "you talk"
+      },
+      {
+       "name": "Retell",
+       "desc": "tell it back in 4–5 sentences",
+       "mode": "you talk"
+      },
+      {
+       "name": "Quick reactions",
+       "desc": "react to short news",
+       "mode": "you talk"
+      }
+     ],
+     "steps": [
+      {
+       "type": "listen",
+       "who": "sam",
+       "title": "Sam's three pieces of news",
+       "script": "Okay, three things happened this week. First, the good news: I finally passed my driving test! Third time, but who's counting? Second, the bad news: on the way home I dropped my phone in a puddle, and now the screen is completely black. My mum says it's karma. And third, the strange news: my neighbour's dog followed me to college on Wednesday, and he sat outside the classroom all morning. The teacher thought it was my dog! So, yeah, a busy week.",
+       "questions": [
+        "What was Sam's good news?",
+        "What happened to his phone?",
+        "What did the dog do?",
+        "Retell: tell me Sam's three pieces of news."
+       ]
+      },
+      {
+       "type": "react",
+       "who": "both",
+       "items": [
+        {
+         "news": "I passed my exam!",
+         "feel": "good"
+        },
+        {
+         "news": "The bus left without me.",
+         "feel": "bad"
+        },
+        {
+         "news": "I saw an elephant on the road!",
+         "feel": "surprise"
+        },
+        {
+         "news": "I'm thinking of learning to cook.",
+         "feel": "interest"
+        }
+       ]
+      }
+     ],
+     "short": false,
+     "mode": ""
+    },
+    {
+     "id": "review",
+     "title": "Review",
+     "why": "The phrases that keep coming back, said again from memory. Then you hear today's talk next to yesterday's.",
+     "what": [
+      {
+       "name": "Say them again",
+       "desc": "the phrases that keep coming back",
+       "mode": "you talk"
+      },
+      {
+       "name": "Then and now",
+       "desc": "today's talk next to yesterday's",
+       "mode": "listen"
+      }
+     ],
+     "steps": [
+      {
+       "type": "sayagain"
+      },
+      {
+       "type": "compare"
+      }
+     ],
+     "short": false,
+     "mode": ""
+    }
+   ]
+  },
+  {
+   "day": 4,
+   "title": "Free time and films",
+   "overview": "Phrases to say what you like and don't like, a chat with a stranger in a cinema queue, and Sam's review of a film.",
+   "byTheEnd": "By the end you can say what you like, what you don't, and recommend something.",
+   "phrases": [
+    "I'm really into…",
+    "I'm not a big fan of…",
+    "You should watch…",
+    "It's about…",
+    "I'd give it…",
+    "Have you seen…?"
+   ],
+   "companion": "sam",
+   "sessions": [
+    {
+     "id": "shadow",
+     "title": "Shadowing",
+     "why": "Repeating right after Sam or Maya, at their speed, makes English rhythm your own. You stop translating and start copying how real people sound.",
+     "what": [
+      {
+       "name": "Listen",
+       "desc": "Sam says short lines",
+       "mode": "voice only"
+      },
+      {
+       "name": "Echo",
+       "desc": "repeat right after each line, at the same speed",
+       "mode": "you talk"
+      }
+     ],
+     "steps": [
+      {
+       "type": "shadow",
+       "who": "sam",
+       "lines": [
+        "I'm really into action films.",
+        "I'm not a big fan of horror.",
+        "You should watch it, it's great.",
+        "It's about a guy who loses everything.",
+        "Have you seen it yet?",
+        "I'd give it eight out of ten."
+       ]
+      }
+     ],
+     "short": true,
+     "mode": ""
+    },
+    {
+     "id": "phrases",
+     "title": "Learn today's phrases",
+     "why": "Ready-made phrases come out fast. Learn them as whole blocks, and you don't have to build sentences word by word.",
+     "what": [
+      {
+       "name": "Listen",
+       "desc": "Sam uses today's phrases",
+       "mode": "voice only"
+      },
+      {
+       "name": "Understand",
+       "desc": "when to use each",
+       "mode": "read · EN | සිං"
+      },
+      {
+       "name": "Practise",
+       "desc": "answer Sam and Maya with them",
+       "mode": "you talk"
+      }
+     ],
+     "steps": [
+      {
+       "type": "info",
+       "title": "Today's phrases",
+       "en": "Phrases for what you like:\n• I'm really into… (you love it)\n• I'm not a big fan of… (polite: you don't like it)\n• You should watch / try… (recommend)\n• It's about… (the story in one line)\n• I'd give it 8 out of 10.\n• Have you seen…? (ask)",
+       "si": "කැමති දේ ගැන වාක්‍ය:\n• I'm really into… (ගොඩක් කැමතියි)\n• I'm not a big fan of… (ආචාරශීලීව: අකමැතියි)\n• You should watch / try… (නිර්දේශ කරන්න)\n• It's about… (කතාව එක පේළියකින්)\n• I'd give it 8 out of 10.\n• Have you seen…? (අහන්න)",
+       "examples": []
+      },
+      {
+       "type": "model",
+       "who": "sam",
+       "lines": [
+        "I'm really into action films, but I'm not a big fan of horror. You should watch Jailer. It's about a retired man who protects his family. I'd give it nine out of ten. Have you seen it?"
+       ],
+       "note": ""
+      },
+      {
+       "type": "drill",
+       "who": "sam",
+       "prompt": "What kind of films do you like?",
+       "models": [
+        "I'm really into action films, especially Tamil ones.",
+        "I'm really into comedies. I like to laugh."
+       ],
+       "point": "I'm really into…",
+       "si": ""
+      },
+      {
+       "type": "drill",
+       "who": "maya",
+       "prompt": "Do you like horror films?",
+       "models": [
+        "Not really. I'm not a big fan of horror. I get scared!",
+        "To be honest, I'm not a big fan of them."
+       ],
+       "point": "I'm not a big fan of…",
+       "si": ""
+      },
+      {
+       "type": "drill",
+       "who": "sam",
+       "prompt": "I'm bored. What should I watch tonight?",
+       "models": [
+        "You should watch Vikram. It's about a police officer who…",
+        "You should watch a comedy. Have you seen 3 Idiots?"
+       ],
+       "point": "You should watch… It's about…",
+       "si": ""
+      },
+      {
+       "type": "drill",
+       "who": "maya",
+       "prompt": "What do you do on weekends, apart from films?",
+       "models": [
+        "I'm really into cricket. I play with my friends on Saturdays.",
+        "I usually go out with my friends."
+       ],
+       "point": "Free time, not only films.",
+       "si": ""
+      },
+      {
+       "type": "drill",
+       "who": "sam",
+       "prompt": "Was it good? Out of ten?",
+       "models": [
+        "I'd give it seven out of ten. The story was good, but it was too long.",
+        "I'd give it nine! You should see it."
+       ],
+       "point": "I'd give it…",
+       "si": ""
+      }
+     ],
+     "short": false,
+     "mode": ""
+    },
+    {
+     "id": "talk321",
+     "title": "3-2-1 talk",
+     "why": "The same talk three times, each time shorter. Each round comes out smoother, so you feel what fast, easy speaking is like.",
+     "what": [
+      {
+       "name": "Round 1",
+       "desc": "talk about it for 3 minutes",
+       "mode": "recorded"
+      },
+      {
+       "name": "Round 2",
+       "desc": "the same in 2 minutes",
+       "mode": "recorded"
+      },
+      {
+       "name": "Round 3",
+       "desc": "the same in 1 minute",
+       "mode": "recorded"
+      },
+      {
+       "name": "Compare",
+       "desc": "hear round 1 next to the last round",
+       "mode": "listen"
+      }
+     ],
+     "steps": [
+      {
+       "type": "talk321",
+       "topic": "My favourite film and why",
+       "points": [
+        "the name",
+        "it's about",
+        "the best part",
+        "why I like it",
+        "who should watch it"
+       ]
+      }
+     ],
+     "short": true,
+     "mode": ""
+    },
+    {
+     "id": "talk",
+     "title": "In the cinema queue",
+     "why": "This is the real thing: a real-life situation, and you don't know what they'll say. Use today's phrases and keep it going.",
+     "what": [
+      {
+       "name": "Before you talk",
+       "desc": "the situation, who, your goal",
+       "mode": "read · EN | සිං"
+      },
+      {
+       "name": "Talk",
+       "desc": "Face to face",
+       "mode": "you talk"
+      },
+      {
+       "name": "Summary",
+       "desc": "what happened and one better sentence",
+       "mode": "read"
+      }
+     ],
+     "steps": [
+      {
+       "type": "chat",
+       "who": "sam",
+       "mode": "face",
+       "where": "A cinema ticket queue",
+       "en": "You're in a long queue for a film. The person behind you (Sam plays a stranger) looks friendly. Start a conversation: comment, ask, and talk about films.",
+       "si": "ඔබ චිත්‍රපටයකට දිගු පෝලිමක ඉන්නවා. ඔබ පිටුපස කෙනා (Sam නාඳුනන කෙනෙක් ලෙස) මිත්‍රශීලීයි. කතාවක් පටන් ගන්න: අදහසක් කියන්න, අහන්න, චිත්‍රපට ගැන කතා කරන්න.",
+       "goal": "You speak first. Say what you like and don't like, and recommend one film.",
+       "minTurns": 8,
+       "brief": "Play a friendly stranger in a cinema ticket queue (not his classmate). Wait for him to start. You like comedies and you're not a fan of horror. Ask what he recommends.",
+       "opener": "",
+       "scored": true,
+       "title": "Cinema queue",
+       "whoLine": "A stranger (Sam plays him)"
+      }
+     ],
+     "short": true,
+     "mode": "face"
+    },
+    {
+     "id": "listen",
+     "title": "Sam reviews a film",
+     "why": "Real people talk fast and long. Listen to the whole thing, answer, then tell it back in your own words.",
+     "what": [
+      {
+       "name": "Listen",
+       "desc": "a natural-speed story",
+       "mode": "voice only"
+      },
+      {
+       "name": "Answer",
+       "desc": "3 questions out loud",
+       "mode": "you talk"
+      },
+      {
+       "name": "Retell",
+       "desc": "tell it back in 4–5 sentences",
+       "mode": "you talk"
+      },
+      {
+       "name": "Quick reactions",
+       "desc": "react to short news",
+       "mode": "you talk"
+      }
+     ],
+     "steps": [
+      {
+       "type": "listen",
+       "who": "sam",
+       "title": "Sam's film review",
+       "script": "So last night I watched a film called The Lost Train. It's about a boy who gets on the wrong train and ends up in a tiny village in the hills. At first he's scared and angry, but the people in the village are so kind that he doesn't want to leave. The best part is the old station master, who is really funny. To be honest, the middle is a bit slow, and I'm not a big fan of sad endings, but the music is beautiful. I'd give it seven out of ten. You should watch it with your family on a rainy day.",
+       "questions": [
+        "What is the film about?",
+        "What's the best part, for Sam?",
+        "What doesn't he like?",
+        "Retell: tell me about Sam's film in 4 or 5 sentences."
+       ]
+      },
+      {
+       "type": "react",
+       "who": "both",
+       "items": [
+        {
+         "news": "I got two free tickets!",
+         "feel": "good"
+        },
+        {
+         "news": "The cinema is closed this week.",
+         "feel": "bad"
+        },
+        {
+         "news": "The film is four hours long!",
+         "feel": "surprise"
+        },
+        {
+         "news": "I'm thinking of making a short film.",
+         "feel": "interest"
+        }
+       ]
+      }
+     ],
+     "short": false,
+     "mode": ""
+    },
+    {
+     "id": "review",
+     "title": "Review",
+     "why": "The phrases that keep coming back, said again from memory. Then you hear today's talk next to yesterday's.",
+     "what": [
+      {
+       "name": "Say them again",
+       "desc": "the phrases that keep coming back",
+       "mode": "you talk"
+      },
+      {
+       "name": "Then and now",
+       "desc": "today's talk next to yesterday's",
+       "mode": "listen"
+      }
+     ],
+     "steps": [
+      {
+       "type": "sayagain"
+      },
+      {
+       "type": "compare"
+      }
+     ],
+     "short": false,
+     "mode": ""
+    }
+   ]
+  },
+  {
+   "day": 5,
+   "title": "My town",
+   "overview": "Phrases to describe where you live, a video call where Maya plans a visit to your town, and Maya's trip to Kandy.",
+   "byTheEnd": "By the end you can describe your town and give simple directions and tips.",
+   "phrases": [
+    "There's a… near my house.",
+    "It's famous for…",
+    "It takes about…",
+    "You can…",
+    "It's a bit…",
+    "Have you ever been to…?"
+   ],
+   "companion": "maya",
+   "sessions": [
+    {
+     "id": "shadow",
+     "title": "Shadowing",
+     "why": "Repeating right after Sam or Maya, at their speed, makes English rhythm your own. You stop translating and start copying how real people sound.",
+     "what": [
+      {
+       "name": "Listen",
+       "desc": "Maya says short lines",
+       "mode": "voice only"
+      },
+      {
+       "name": "Echo",
+       "desc": "repeat right after each line, at the same speed",
+       "mode": "you talk"
+      }
+     ],
+     "steps": [
+      {
+       "type": "shadow",
+       "who": "maya",
+       "lines": [
+        "There's a big temple near my house.",
+        "My town is famous for its tea.",
+        "It takes about an hour by bus.",
+        "You can walk around the lake.",
+        "It's a bit quiet at night.",
+        "Have you ever been there?"
+       ]
+      }
+     ],
+     "short": true,
+     "mode": ""
+    },
+    {
+     "id": "phrases",
+     "title": "Learn today's phrases",
+     "why": "Ready-made phrases come out fast. Learn them as whole blocks, and you don't have to build sentences word by word.",
+     "what": [
+      {
+       "name": "Listen",
+       "desc": "Maya uses today's phrases",
+       "mode": "voice only"
+      },
+      {
+       "name": "Understand",
+       "desc": "when to use each",
+       "mode": "read · EN | සිං"
+      },
+      {
+       "name": "Practise",
+       "desc": "answer Sam and Maya with them",
+       "mode": "you talk"
+      }
+     ],
+     "steps": [
+      {
+       "type": "info",
+       "title": "Today's phrases",
+       "en": "Phrases for your town:\n• There's a… near my house.\n• It's famous for…\n• It takes about… (time to get there)\n• You can… (things to do)\n• It's a bit… (quiet, busy, hot)\n• Have you ever been to…? (ask)",
+       "si": "ඔබේ නගරය ගැන වාක්‍ය:\n• There's a… near my house. (ගෙදර ළඟ…)\n• It's famous for… (…ට ප්‍රසිද්ධයි)\n• It takes about… (යන්න ගතවන කාලය)\n• You can… (කරන්න පුළුවන් දේ)\n• It's a bit… (ටිකක් නිස්කලංක, කාර්යබහුල, රස්නේ)\n• Have you ever been to…? (අහන්න)",
+       "examples": []
+      },
+      {
+       "type": "model",
+       "who": "maya",
+       "lines": [
+        "I live in Kandy. There's a big lake near my house. It's famous for the Temple of the Tooth. It takes about three hours from Colombo by train. You can walk around the lake in the evening. Have you ever been there?"
+       ],
+       "note": ""
+      },
+      {
+       "type": "drill",
+       "who": "maya",
+       "prompt": "Where do you live? What's it like?",
+       "models": [
+        "I live in Kandy. It's a bit busy, but it's beautiful.",
+        "I live in a small town near Galle. It's quiet and green."
+       ],
+       "point": "It's a bit…",
+       "si": ""
+      },
+      {
+       "type": "drill",
+       "who": "sam",
+       "prompt": "What's near your house?",
+       "models": [
+        "There's a temple and a small shop near my house.",
+        "There's a big school and a bus stand near my house."
+       ],
+       "point": "There's a… near my house.",
+       "si": ""
+      },
+      {
+       "type": "drill",
+       "who": "maya",
+       "prompt": "What's your town famous for?",
+       "models": [
+        "It's famous for its beaches and fish.",
+        "It's famous for the temple and the lake."
+       ],
+       "point": "It's famous for…",
+       "si": ""
+      },
+      {
+       "type": "drill",
+       "who": "sam",
+       "prompt": "How do I get there from Colombo?",
+       "models": [
+        "You can take the train. It takes about three hours.",
+        "It takes about two hours by bus."
+       ],
+       "point": "It takes about…",
+       "si": ""
+      },
+      {
+       "type": "drill",
+       "who": "maya",
+       "prompt": "I'm going to Galle next week!",
+       "models": [
+        "Really? Have you ever been there before? You can see the fort.",
+        "Nice! You should try the seafood there."
+       ],
+       "point": "Have you ever been…? / You can…",
+       "si": ""
+      }
+     ],
+     "short": false,
+     "mode": ""
+    },
+    {
+     "id": "talk321",
+     "title": "3-2-1 talk",
+     "why": "The same talk three times, each time shorter. Each round comes out smoother, so you feel what fast, easy speaking is like.",
+     "what": [
+      {
+       "name": "Round 1",
+       "desc": "talk about it for 3 minutes",
+       "mode": "recorded"
+      },
+      {
+       "name": "Round 2",
+       "desc": "the same in 2 minutes",
+       "mode": "recorded"
+      },
+      {
+       "name": "Round 3",
+       "desc": "the same in 1 minute",
+       "mode": "recorded"
+      },
+      {
+       "name": "Compare",
+       "desc": "hear round 1 next to the last round",
+       "mode": "listen"
+      }
+     ],
+     "steps": [
+      {
+       "type": "talk321",
+       "topic": "My town",
+       "points": [
+        "where",
+        "what's near my house",
+        "famous for",
+        "how to get there",
+        "what to do"
+       ]
+      }
+     ],
+     "short": true,
+     "mode": ""
+    },
+    {
+     "id": "talk",
+     "title": "Maya plans a visit",
+     "why": "This is the real thing: a real-life situation, and you don't know what they'll say. Use today's phrases and keep it going.",
+     "what": [
+      {
+       "name": "Before you talk",
+       "desc": "the situation, who, your goal",
+       "mode": "read · EN | සිං"
+      },
+      {
+       "name": "Talk",
+       "desc": "Video call",
+       "mode": "you talk"
+      },
+      {
+       "name": "Summary",
+       "desc": "what happened and one better sentence",
+       "mode": "read"
+      }
+     ],
+     "steps": [
+      {
+       "type": "chat",
+       "who": "maya",
+       "mode": "video",
+       "where": "A video call: Maya wants to visit your town",
+       "en": "Maya video-calls you. She wants to visit your town next month. Tell her what it's like, how to get there and what to do. Ask what she likes.",
+       "si": "Maya ඔබට වීඩියෝ ඇමතුමක් ගන්නවා. ඇයට ඊළඟ මාසේ ඔබේ නගරයට එන්න ඕනේ. එය කොහොමද, එන්නේ කොහොමද, කරන්න තියෙන දේ කියන්න. ඇය කැමති දේ අහන්න.",
+       "goal": "Greet her first, describe your town, give 2 tips, and say goodbye before you hang up.",
+       "minTurns": 10,
+       "brief": "Video-call him: you want to visit his town next month. Ask what it's like, how long it takes from Colombo, where to eat, what to see. Ask him to repeat once if something is unclear.",
+       "opener": "",
+       "scored": true,
+       "title": "Maya's visit",
+       "whoLine": "Maya, a classmate"
+      }
+     ],
+     "short": true,
+     "mode": "video"
+    },
+    {
+     "id": "listen",
+     "title": "Maya's trip to Kandy",
+     "why": "Real people talk fast and long. Listen to the whole thing, answer, then tell it back in your own words.",
+     "what": [
+      {
+       "name": "Listen",
+       "desc": "a natural-speed story",
+       "mode": "voice only"
+      },
+      {
+       "name": "Answer",
+       "desc": "3 questions out loud",
+       "mode": "you talk"
+      },
+      {
+       "name": "Retell",
+       "desc": "tell it back in 4–5 sentences",
+       "mode": "you talk"
+      },
+      {
+       "name": "Quick reactions",
+       "desc": "react to short news",
+       "mode": "you talk"
+      }
+     ],
+     "steps": [
+      {
+       "type": "listen",
+       "who": "maya",
+       "title": "Maya's trip to Kandy",
+       "script": "Last weekend I finally went to Kandy. I took the early train from Colombo, and it took about three hours, but the views were amazing. First I walked around the lake. There are so many monkeys there! Then I visited the Temple of the Tooth, which was really peaceful. For lunch, a man at the market told me about a small place near the clock tower, and they had the best kottu I've ever had. In the evening it started raining, so I sat in a café and watched the people. It's a bit busy, but I'd love to go back.",
+       "questions": [
+        "How long did the train take?",
+        "What did Maya see at the lake?",
+        "What happened in the evening?",
+        "Retell: tell me about Maya's day in Kandy."
+       ]
+      },
+      {
+       "type": "react",
+       "who": "both",
+       "items": [
+        {
+         "news": "They're building a new park in my town.",
+         "feel": "good"
+        },
+        {
+         "news": "The road to my village is closed.",
+         "feel": "bad"
+        },
+        {
+         "news": "I saw a leopard near Yala!",
+         "feel": "surprise"
+        },
+        {
+         "news": "I'm thinking of moving to Galle.",
+         "feel": "interest"
+        }
+       ]
+      }
+     ],
+     "short": false,
+     "mode": ""
+    },
+    {
+     "id": "review",
+     "title": "Review",
+     "why": "The phrases that keep coming back, said again from memory. Then you hear today's talk next to yesterday's.",
+     "what": [
+      {
+       "name": "Say them again",
+       "desc": "the phrases that keep coming back",
+       "mode": "you talk"
+      },
+      {
+       "name": "Then and now",
+       "desc": "today's talk next to yesterday's",
+       "mode": "listen"
+      }
+     ],
+     "steps": [
+      {
+       "type": "sayagain"
+      },
+      {
+       "type": "compare"
+      }
+     ],
+     "short": false,
+     "mode": ""
+    }
+   ]
+  },
+  {
+   "day": 6,
+   "title": "Mission: a first meeting",
+   "overview": "A mission day: everything from this week in real situations. Compliments, questions, and your week so far, with both Sam and Maya.",
+   "byTheEnd": "By the end you can meet someone new and keep a 10-minute chat going on your own.",
+   "phrases": [
+    "Thanks, actually…",
+    "By the way…",
+    "Nice to meet you.",
+    "Anyway…",
+    "It was nice talking to you.",
+    "See you soon!"
+   ],
+   "companion": "both",
+   "sessions": [
+    {
+     "id": "shadow",
+     "title": "Shadowing",
+     "why": "Repeating right after Sam or Maya, at their speed, makes English rhythm your own. You stop translating and start copying how real people sound.",
+     "what": [
+      {
+       "name": "Listen",
+       "desc": "Sam says short lines",
+       "mode": "voice only"
+      },
+      {
+       "name": "Echo",
+       "desc": "repeat right after each line, at the same speed",
+       "mode": "you talk"
+      }
+     ],
+     "steps": [
+      {
+       "type": "shadow",
+       "who": "sam",
+       "lines": [
+        "Thanks! Actually, I got it yesterday.",
+        "By the way, where are you from?",
+        "Nice to meet you.",
+        "Anyway, how was your week?",
+        "It was nice talking to you.",
+        "See you soon!"
+       ]
+      }
+     ],
+     "short": true,
+     "mode": ""
+    },
+    {
+     "id": "phrases",
+     "title": "Learn today's phrases",
+     "why": "Ready-made phrases come out fast. Learn them as whole blocks, and you don't have to build sentences word by word.",
+     "what": [
+      {
+       "name": "Listen",
+       "desc": "Sam uses today's phrases",
+       "mode": "voice only"
+      },
+      {
+       "name": "Understand",
+       "desc": "when to use each",
+       "mode": "read · EN | සිං"
+      },
+      {
+       "name": "Practise",
+       "desc": "answer Sam and Maya with them",
+       "mode": "you talk"
+      }
+     ],
+     "steps": [
+      {
+       "type": "info",
+       "title": "Today's phrases",
+       "en": "Mission phrases for a first meeting:\n• Thanks, actually… (accept a compliment and add something)\n• By the way… (change the topic)\n• Nice to meet you.\n• Anyway… (move on)\n• It was nice talking to you. / See you soon! (end politely)",
+       "si": "පළමු හමුවීමක් සඳහා වාක්‍ය:\n• Thanks, actually… (ප්‍රශංසාවක් පිළිගෙන යමක් එකතු කරන්න)\n• By the way… (මාතෘකාව වෙනස් කරන්න)\n• Nice to meet you.\n• Anyway… (ඉදිරියට යන්න)\n• It was nice talking to you. / See you soon! (ආචාරශීලීව අවසන් කරන්න)",
+       "examples": []
+      },
+      {
+       "type": "model",
+       "who": "sam",
+       "lines": [
+        "Oh, thanks! Actually, my sister gave it to me. Nice to meet you, I'm Sam. By the way, are you in Maya's class? Anyway, it was nice talking to you. See you soon!"
+       ],
+       "note": ""
+      },
+      {
+       "type": "drill",
+       "who": "maya",
+       "prompt": "Nice shirt!",
+       "models": [
+        "Thanks! Actually, I got it for my birthday.",
+        "Oh, thanks! Actually, it's my brother's."
+       ],
+       "point": "Thanks, actually…",
+       "si": ""
+      },
+      {
+       "type": "drill",
+       "who": "sam",
+       "prompt": "Hi! I'm Sam, Maya's friend.",
+       "models": [
+        "Hi Sam, nice to meet you. I'm [his name]. How do you know Maya?",
+        "Nice to meet you! I'm in her English class."
+       ],
+       "point": "Nice to meet you + a question.",
+       "si": ""
+      },
+      {
+       "type": "drill",
+       "who": "maya",
+       "prompt": "…and that's why I hate the rain.",
+       "models": [
+        "Ha, I understand. Anyway, how was your week?",
+        "Me too! By the way, are you free on Sunday?"
+       ],
+       "point": "Anyway / By the way",
+       "si": ""
+      },
+      {
+       "type": "drill",
+       "who": "sam",
+       "prompt": "Oh, my bus is here!",
+       "models": [
+        "Oh, OK! It was nice talking to you. See you soon!",
+        "No problem. Nice to meet you, see you!"
+       ],
+       "point": "End politely.",
+       "si": ""
+      }
+     ],
+     "short": false,
+     "mode": ""
+    },
+    {
+     "id": "talk321",
+     "title": "3-2-1 talk",
+     "why": "The same talk three times, each time shorter. Each round comes out smoother, so you feel what fast, easy speaking is like.",
+     "what": [
+      {
+       "name": "Round 1",
+       "desc": "talk about it for 3 minutes",
+       "mode": "recorded"
+      },
+      {
+       "name": "Round 2",
+       "desc": "the same in 2 minutes",
+       "mode": "recorded"
+      },
+      {
+       "name": "Round 3",
+       "desc": "the same in 1 minute",
+       "mode": "recorded"
+      },
+      {
+       "name": "Compare",
+       "desc": "hear round 1 next to the last round",
+       "mode": "listen"
+      }
+     ],
+     "steps": [
+      {
+       "type": "talk321",
+       "topic": "My week so far",
+       "points": [
+        "Monday to now",
+        "the best moment",
+        "something new",
+        "something hard",
+        "next week"
+       ]
+      }
+     ],
+     "short": true,
+     "mode": ""
+    },
+    {
+     "id": "talk",
+     "title": "Free chat with both",
+     "why": "This is the real thing: a real-life situation, and you don't know what they'll say. Use today's phrases and keep it going.",
+     "what": [
+      {
+       "name": "Before you talk",
+       "desc": "the situation, who, your goal",
+       "mode": "read · EN | සිං"
+      },
+      {
+       "name": "Talk",
+       "desc": "Free chat",
+       "mode": "you talk"
+      },
+      {
+       "name": "Summary",
+       "desc": "what happened and one better sentence",
+       "mode": "read"
+      }
+     ],
      "steps": [
       {
        "type": "freechat",
        "who": "both",
        "ideas": [
-        "Which realm of Thor's world would you visit?",
-        "A family wedding",
-        "Your plans for next week"
+        "Your week so far",
+        "Something new you learned",
+        "Plans for Sunday"
        ],
-       "brief": ""
-      },
-      {
-       "type": "record",
-       "topic": "Talk about your week: what you learned, what was hard, what was fun."
+       "brief": "Mission: a relaxed chat. Sam and Maya give him a compliment, ask about his week, and bring up things he told them earlier this week. No score.",
+       "title": "With Sam and Maya"
       }
      ],
-     "note": ""
+     "short": true,
+     "mode": "free"
+    },
+    {
+     "id": "listen",
+     "title": "Two friends meet after years",
+     "why": "Real people talk fast and long. Listen to the whole thing, answer, then tell it back in your own words.",
+     "what": [
+      {
+       "name": "Listen",
+       "desc": "a natural-speed story",
+       "mode": "voice only"
+      },
+      {
+       "name": "Answer",
+       "desc": "3 questions out loud",
+       "mode": "you talk"
+      },
+      {
+       "name": "Retell",
+       "desc": "tell it back in 4–5 sentences",
+       "mode": "you talk"
+      },
+      {
+       "name": "Quick reactions",
+       "desc": "react to short news",
+       "mode": "you talk"
+      }
+     ],
+     "steps": [
+      {
+       "type": "listen",
+       "who": "maya",
+       "title": "Two friends meet after years",
+       "script": "Yesterday something lovely happened. I was waiting for the bus in Pettah when a man said, \"Maya? Is that you?\" It was Dilan, my best friend from school! We hadn't seen each other for eight years. He looks so different now: he has a beard and he's much taller. He told me he works as a nurse in a big hospital, and he's getting married in March. We were so busy talking that I missed my bus, and then the next one too! In the end we had tea together, and he invited me to the wedding. Anyway, we promised to meet every month.",
+       "questions": [
+        "Who did Maya meet?",
+        "What does he do now?",
+        "Why did she miss her bus?",
+        "Retell: tell me Maya's story in 4 or 5 sentences."
+       ]
+      },
+      {
+       "type": "react",
+       "who": "both",
+       "items": [
+        {
+         "news": "I'm invited to a wedding!",
+         "feel": "good"
+        },
+        {
+         "news": "I missed two buses.",
+         "feel": "bad"
+        },
+        {
+         "news": "My old teacher is on TV!",
+         "feel": "surprise"
+        },
+        {
+         "news": "I'm thinking of growing a beard.",
+         "feel": "interest"
+        }
+       ]
+      }
+     ],
+     "short": false,
+     "mode": ""
+    },
+    {
+     "id": "review",
+     "title": "Review",
+     "why": "The phrases that keep coming back, said again from memory. Then you hear today's talk next to yesterday's.",
+     "what": [
+      {
+       "name": "Say them again",
+       "desc": "the phrases that keep coming back",
+       "mode": "you talk"
+      },
+      {
+       "name": "Then and now",
+       "desc": "today's talk next to yesterday's",
+       "mode": "listen"
+      }
+     ],
+     "steps": [
+      {
+       "type": "sayagain"
+      },
+      {
+       "type": "compare"
+      }
+     ],
+     "short": false,
+     "mode": ""
     }
    ]
   },
   {
    "day": 7,
    "title": "Review and weekly test",
+   "overview": "Go over the week's phrases, then do the weekly test: an 8-turn chat with a stranger and a short piece of news. You'll also hear yourself next to Day 0.",
+   "byTheEnd": "By the end you see how far you've come since Day 0.",
+   "phrases": [
+    "I'm from…",
+    "We usually…",
+    "Let me think…",
+    "I'm really into…",
+    "It's famous for…",
+    "By the way…"
+   ],
    "companion": "both",
-   "connectors": [],
-   "sound": "review",
-   "review": "Then vs now: tell me about yourself.",
    "sessions": [
     {
-     "id": "learn",
-     "title": "Review",
-     "effort": "medium",
+     "id": "shadow",
+     "title": "Shadowing",
+     "why": "Repeating right after Sam or Maya, at their speed, makes English rhythm your own. You stop translating and start copying how real people sound.",
+     "what": [
+      {
+       "name": "Listen",
+       "desc": "Maya says short lines",
+       "mode": "voice only"
+      },
+      {
+       "name": "Echo",
+       "desc": "repeat right after each line, at the same speed",
+       "mode": "you talk"
+      }
+     ],
+     "steps": [
+      {
+       "type": "shadow",
+       "who": "maya",
+       "lines": [
+        "I'm from Kandy, but I live in Colombo.",
+        "We usually eat together on Sundays.",
+        "Let me think for a second.",
+        "I'm really into cricket.",
+        "It's famous for its tea.",
+        "By the way, how was your week?"
+       ]
+      }
+     ],
+     "short": true,
+     "mode": ""
+    },
+    {
+     "id": "phrases",
+     "title": "Week 1 phrases",
+     "why": "All this week's phrases once more, before the test.",
+     "what": [
+      {
+       "name": "Say them again",
+       "desc": "the phrases that keep coming back",
+       "mode": "you talk"
+      }
+     ],
      "steps": [
       {
        "type": "info",
@@ -1187,22 +2243,83 @@
        "type": "sayagain"
       }
      ],
-     "note": ""
+     "short": false,
+     "mode": ""
+    },
+    {
+     "id": "talk321",
+     "title": "Then and now",
+     "why": "The same talk as Day 0. Your Day 0 recording is played next to today's.",
+     "what": [
+      {
+       "name": "Talk",
+       "desc": "tell me about yourself, 3 then 2 then 1 minute",
+       "mode": "recorded"
+      },
+      {
+       "name": "Compare",
+       "desc": "Day 0 next to today",
+       "mode": "listen"
+      }
+     ],
+     "steps": [
+      {
+       "type": "talk321",
+       "topic": "Tell me about yourself",
+       "points": [
+        "from",
+        "now",
+        "family",
+        "likes",
+        "town",
+        "a plan"
+       ]
+      }
+     ],
+     "short": true,
+     "mode": ""
     },
     {
      "id": "test",
      "title": "Weekly test",
-     "effort": "hard",
+     "why": "Scored on being understood, keeping it going and asking when lost, not on perfect grammar.",
+     "what": [
+      {
+       "name": "Respond",
+       "desc": "short remarks",
+       "mode": "you talk"
+      },
+      {
+       "name": "Start",
+       "desc": "speak first",
+       "mode": "you talk"
+      },
+      {
+       "name": "Keep it going",
+       "desc": "react and ask",
+       "mode": "you talk"
+      },
+      {
+       "name": "Chat",
+       "desc": "8 turns with a stranger",
+       "mode": "you talk"
+      },
+      {
+       "name": "Listen",
+       "desc": "short news, 3 questions",
+       "mode": "you talk"
+      }
+     ],
      "steps": [
       {
        "type": "test",
-       "parts": "A respond · B start · C keep it going · D long turn · E full conversation",
+       "parts": "A respond · B start · C keep it going · D full conversation · E listening",
        "pass": 70
       },
       {
        "type": "drill",
        "who": "sam",
-       "prompt": "Nice shirt!",
+       "prompt": "Nice bag!",
        "models": [],
        "point": "A. Respond",
        "si": ""
@@ -1218,23 +2335,7 @@
       {
        "type": "drill",
        "who": "sam",
-       "prompt": "Late again?",
-       "models": [],
-       "point": "A. Respond",
-       "si": ""
-      },
-      {
-       "type": "drill",
-       "who": "maya",
-       "prompt": "Is that a new phone?",
-       "models": [],
-       "point": "A. Respond (unseen)",
-       "si": ""
-      },
-      {
-       "type": "drill",
-       "who": "sam",
-       "prompt": "(A lift. A man with a Batman bag. Speak first.)",
+       "prompt": "(At the bus stop. An old man is waiting next to you. Speak first.)",
        "models": [],
        "point": "B. Start (unseen)",
        "si": ""
@@ -1242,66 +2343,67 @@
       {
        "type": "drill",
        "who": "maya",
-       "prompt": "(The college canteen is very crowded today. Speak first.)",
-       "models": [],
-       "point": "B. Start",
-       "si": ""
-      },
-      {
-       "type": "drill",
-       "who": "maya",
-       "prompt": "Guess what? Yesterday I went to the beach, and suddenly a huge wave took my bag!",
+       "prompt": "Guess what? My brother is moving to Dubai next week.",
        "models": [],
        "point": "C. Keep it going: react + follow-up",
-       "si": ""
-      },
-      {
-       "type": "drill",
-       "who": "sam",
-       "prompt": "Tell me a 1-minute story: something from your life, or your favourite film.",
-       "models": [],
-       "point": "D. Long turn",
        "si": ""
       },
       {
        "type": "chat",
        "who": "maya",
        "mode": "face",
-       "where": "Unseen: a misunderstanding at the cinema",
-       "en": "At the cinema, a young woman says you're sitting in her seat. Sort out the misunderstanding politely, then chat a little about the film, and close politely.",
-       "si": "සිනමා ශාලාවේදී තරුණියක් කියනවා ඔබ ඇගේ ආසනයේ ඉඳගෙන ඉන්නවා කියලා. වැරදි වැටහීම ආචාරශීලීව විසඳා, චිත්‍රපටය ගැන ටිකක් කතා කර, ආචාරශීලීව අවසන් කරන්න.",
-       "goal": "Start → sort it out → story → close; 12+ turns.",
-       "minTurns": 12,
-       "brief": "Play a stranger at the cinema who thinks he is in her seat (seat H7). Be polite but firm; it turns out his ticket says H8. Then chat about the film.",
-       "opener": "Excuse me, sorry, I think you're in my seat?",
+       "where": "Unseen: a stranger at a wedding",
+       "en": "At a cousin's wedding, a young woman you don't know sits next to you. Introduce yourself, find out how she knows the family, talk for a while, and close politely.",
+       "si": "ඥාති සහෝදරයෙකුගේ මංගල උත්සවයකදී ඔබ නොදන්නා තරුණියක් ඔබ ළඟ ඉඳගන්නවා. ඔබව හඳුන්වා දී, ඇය පවුලට සම්බන්ධ කොහොමද කියා දැනගෙන, ටික වෙලාවක් කතා කර, ආචාරශීලීව අවසන් කරන්න.",
+       "goal": "Start → ask → share → close; 8+ turns.",
+       "minTurns": 8,
+       "brief": "Play a friendly stranger at a wedding who is the bride's colleague. Wait for him to speak first.",
+       "opener": "",
        "scored": true,
-       "whoLine": "A young woman at the cinema",
-       "title": "Your seat or mine?"
-      }
-     ],
-     "note": ""
-    },
-    {
-     "id": "free",
-     "title": "Free chat",
-     "effort": "relaxed",
-     "steps": [
-      {
-       "type": "freechat",
-       "who": "both",
-       "ideas": [
-        "What was hardest this week?",
-        "Your favourite moment this week",
-        "What you want to learn next"
-       ],
-       "brief": ""
+       "title": "At a wedding",
+       "whoLine": "A stranger (Maya plays her)"
       },
       {
-       "type": "record",
-       "topic": "Tell me about yourself: who you are, what you do, what you like."
+       "type": "listen",
+       "who": "sam",
+       "title": "Short news",
+       "script": "Here's the local news. The new bus station in Kandy opens next Monday. Buses to Colombo will leave every thirty minutes, from five in the morning. Tickets will cost two hundred rupees, and students get half price.",
+       "questions": [
+        "When does the bus station open?",
+        "How often do buses go to Colombo?",
+        "How much do students pay?"
+       ]
       }
      ],
-     "note": ""
+     "short": false,
+     "mode": ""
+    },
+    {
+     "id": "review",
+     "title": "Review",
+     "why": "The phrases that keep coming back, said again from memory. Then you hear today's talk next to yesterday's.",
+     "what": [
+      {
+       "name": "Say them again",
+       "desc": "the phrases that keep coming back",
+       "mode": "you talk"
+      },
+      {
+       "name": "Then and now",
+       "desc": "today's talk next to yesterday's",
+       "mode": "listen"
+      }
+     ],
+     "steps": [
+      {
+       "type": "sayagain"
+      },
+      {
+       "type": "compare"
+      }
+     ],
+     "short": false,
+     "mode": ""
     }
    ]
   }
